@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $home := .Site.Home.RelPermalink }}
 <div class="portfolio-shell">
     <section class="hero-grid">
         <div class="hero-copy terminal-window">
@@ -10,7 +11,7 @@
             <div class="hero-actions">
                 <a class="button button-primary" href="#projects">View my work <span>↗</span></a>
 
-                <a class="button button-quiet" href="{{ "resume.pdf" | relURL }}" target="_blank" rel="noopener noreferrer">
+                <a class="button button-quiet" href="{{ $home }}resume.pdf" target="_blank" rel="noopener noreferrer">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                         <polyline points="14 2 14 8 20 8"></polyline>
@@ -25,7 +26,7 @@
 
         <figure class="hero-portrait">
             <div class="window-chrome" aria-hidden="true"><span class="window-dots"></span><span>profile.jpg</span></div>
-            <img src="{{ "media/TitleProfile-optimized.jpg" | relURL }}" alt="Aarush Mane" loading="eager">
+            <img src="{{ $home }}media/TitleProfile-optimized.jpg" alt="Aarush Mane" loading="eager">
             <figcaption>
                 Princeton University · Computer Science
             </figcaption>
@@ -174,7 +175,7 @@
                 </a>
             </div>
 
-            <a class="tile-footer research-case-link" href="{{ "research/ieee-pid-control/" | relURL }}">
+            <a class="tile-footer research-case-link" href="{{ $home }}research/ieee-pid-control/">
                 Case study <span>→</span>
             </a>
         </article>
@@ -252,7 +253,7 @@
                                 "
                             >
                                 <a
-                                    href="{{ .src | relURL }}"
+                                    href="{{ $home }}{{ strings.TrimPrefix "/" .src }}"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style="
@@ -261,7 +262,7 @@
                                     "
                                 >
                                     <img
-                                        src="{{ .src | relURL }}"
+                                        src="{{ $home }}{{ strings.TrimPrefix "/" .src }}"
                                         alt="{{ .alt }}"
                                         loading="lazy"
                                         style="

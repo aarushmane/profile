@@ -10,7 +10,7 @@ media:
   - src: "media/AICam1.JPG"
     alt: "AI Assistive Camera project display"
     caption: "A live demonstration of the assistive-camera workflow at the 2024 CS Fair."
-  - src: "media/AICam2.HEIC"
+  - src: "media/AICam2.jpg"
     alt: "Students using the AI Assistive Camera at the CS Fair"
     caption: "The project in use during the event, where it served more than 200 participants."
 ---

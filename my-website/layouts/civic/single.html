@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $home := .Site.Home.RelPermalink }}
 <div class="case-study-shell civic-case-study">
     <header class="case-study-hero">
         <a class="back-link" href="{{ .Site.Home.RelPermalink }}#civic-service">← Back to civic service</a>
@@ -86,8 +87,8 @@
 
                     {{ range . }}
                         <figure class="case-study-media">
-                            <a href="{{ .src | relURL }}" target="_blank" rel="noopener noreferrer">
-                                <img src="{{ .src | relURL }}" alt="{{ .alt }}" loading="lazy">
+                            <a href="{{ $home }}{{ strings.TrimPrefix "/" .src }}" target="_blank" rel="noopener noreferrer">
+                                <img src="{{ $home }}{{ strings.TrimPrefix "/" .src }}" alt="{{ .alt }}" loading="lazy">
                             </a>
 
                             {{ with .caption }}

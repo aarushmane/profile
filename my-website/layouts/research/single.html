@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $home := .Site.Home.RelPermalink }}
 <div class="case-study-shell research-case-study">
     <header class="case-study-hero">
         <a class="back-link" href="{{ .Site.Home.RelPermalink }}#research">← Back to research</a>
@@ -24,7 +25,7 @@
             {{ with .Params.media }}
             <section class="case-study-gallery" aria-label="Research media"><p class="aside-gallery-label">Research media</p>
                 {{ range . }}
-                <figure class="case-study-media"><a href="{{ .src | relURL }}" target="_blank" rel="noopener noreferrer"><img src="{{ .src | relURL }}" alt="{{ .alt }}" loading="lazy"></a>{{ with .caption }}<figcaption>{{ . }}</figcaption>{{ end }}</figure>
+                <figure class="case-study-media"><a href="{{ $home }}{{ strings.TrimPrefix "/" .src }}" target="_blank" rel="noopener noreferrer"><img src="{{ $home }}{{ strings.TrimPrefix "/" .src }}" alt="{{ .alt }}" loading="lazy"></a>{{ with .caption }}<figcaption>{{ . }}</figcaption>{{ end }}</figure>
                 {{ end }}
             </section>
             {{ end }}
