@@ -1,5 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const name = document.querySelector('.typed-title');
+  if (name && window.matchMedia('(max-width: 760px)').matches) {
+    const fullName = name.textContent;
+    name.setAttribute('aria-label', fullName);
+    name.textContent = fullName.charAt(0);
+    let position = 1;
+    const timer = window.setInterval(() => {
+      name.textContent = fullName.slice(0, ++position);
+      if (position >= fullName.length) window.clearInterval(timer);
+    }, 95);
+  }
+
+  if (!('IntersectionObserver' in window)) return;
 
   const items = document.querySelectorAll('.profile-section, .section-heading, .info-card, .project-tile, .research-card, .civic-feature-card, .recognition-item, .contact-panel, .case-study-meta, .case-study-prose, .case-study-aside');
   const observer = new IntersectionObserver(entries => {
