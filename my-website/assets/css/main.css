@@ -414,3 +414,76 @@ a { color: inherit; text-decoration: none; }
     object-fit: contain;
   }
 }
+
+/* A quieter home page, with room for content on narrow screens. */
+.hero-grid { gap: clamp(2rem, 5vw, 5rem); }
+.hero-copy { min-width: 0; }
+.hero-copy h1 { font-size: clamp(3rem, 7vw, 5.5rem); letter-spacing: -.055em; line-height: 1.1; }
+.hero-description { max-width: 38rem; line-height: 1.7; }
+.hero-portrait { box-shadow: none; border-color: var(--line); transform: none; }
+.hero-portrait figcaption { font-family: 'Manrope', sans-serif; font-size: .78rem; }
+.typed-title { display: inline-block !important; overflow: hidden; white-space: nowrap; width: 0; max-width: 100%; border-right: 2px solid var(--cyan); animation: type-name 1.5s steps(11, end) .15s forwards, typing-caret .7s step-end infinite; }
+@keyframes type-name { to { width: 11ch; } }
+@keyframes typing-caret { 50% { border-color: transparent; } }
+.profile-copy { max-width: 42rem; }
+.section-block { padding-block: clamp(3.5rem, 7vw, 5.5rem); }
+.project-tile, .info-card, .recognition-item, .research-card, .civic-feature-card { border-color: var(--line); background: var(--card); }
+.project-tile { min-height: 0; }
+.project-tile p:not(.card-meta), .recognition-item p:last-child, .info-card p:last-child { line-height: 1.65; }
+.research-card > p:not(.project-card-meta) { color: var(--muted); max-width: 62rem; }
+.scroll-reveal { opacity: 0; transform: translateY(18px); transition: opacity .5s ease, transform .5s ease; }
+.scroll-reveal.is-visible { opacity: 1; transform: translateY(0); }
+@media (max-width: 760px) {
+  .site-nav { padding: .85rem 1.5rem; }
+  .portfolio-shell, .case-study-shell { width: auto; max-width: none; margin-inline: 1.5rem; padding-inline: 0; }
+  .hero-grid { gap: 2rem; padding-top: 3rem; }
+  .hero-copy h1 { font-size: clamp(2.65rem, 11vw, 4rem); }
+  .hero-description { font-size: 1rem; margin-top: 1.25rem; }
+  .hero-actions { margin-top: 1.5rem; }
+  .hero-portrait img { height: auto; max-height: 380px; }
+  .profile-section { padding-block: 3.5rem; }
+  .profile-facts { gap: 1rem; }
+  .fact-row { gap: .5rem; }
+  .section-heading h2 { font-size: clamp(1.85rem, 8vw, 2.8rem); }
+  .info-card, .project-tile, .recognition-item, .research-card, .civic-feature-card { padding: 1.25rem; }
+  .contact-panel { padding: 1.5rem; }
+  .contact-buttons .button { max-width: 100%; overflow-wrap: anywhere; }
+  .site-footer { padding-inline: 1.5rem; }
+}
+@media (max-width: 380px) { .portfolio-shell, .case-study-shell { margin-inline: 1.25rem; } .site-nav { padding-inline: 1.25rem; } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .typed-title { width: auto; border: 0; animation: none; }
+  .scroll-reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* Shared reading layout for every project, research, and civic page. */
+.case-study-shell { max-width: 1200px; padding: clamp(2.5rem, 5vw, 4.5rem) clamp(1.5rem, 5vw, 4rem) 6rem; }
+.case-study-hero { max-width: 800px; }
+.case-study-hero h1 { font-size: clamp(2.4rem, 5vw, 4.5rem); line-height: 1.1; letter-spacing: -.05em; overflow-wrap: anywhere; }
+.case-study-summary { font-size: clamp(1rem, 1.6vw, 1.15rem); margin-top: 1.25rem; }
+.case-study-meta { margin: 2.5rem 0; }
+.case-study-content { grid-template-columns: minmax(0, 1fr) minmax(230px, 290px); gap: clamp(1.5rem, 3vw, 2.5rem); align-items: start; }
+.case-study-prose { padding: clamp(1.5rem, 3vw, 2.25rem); }
+.case-study-prose p, .case-study-prose li { font-size: .97rem; line-height: 1.75; }
+.case-study-aside { position: static; max-height: none; overflow: visible; padding: 0; }
+.case-study-media img, .case-study-media video { height: auto; max-height: 360px; object-fit: contain; background: var(--bg); }
+.back-link { margin-bottom: 2rem; }
+:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+@media (max-width: 900px) {
+  .case-study-content { grid-template-columns: 1fr; }
+  .case-study-aside { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 1rem; }
+  .case-study-gallery { margin-top: 0; }
+}
+@media (max-width: 760px) {
+  .case-study-shell { margin: 0; padding: 2.5rem 1.5rem 5rem; }
+  .case-study-hero h1, .research-case-study .case-study-hero h1, .civic-case-study .case-study-hero h1 { font-size: clamp(2rem, 9vw, 3rem); }
+  .case-study-prose { padding: 1.5rem; }
+  .case-study-meta { gap: .8rem; margin: 2rem 0; }
+  .case-study-actions { gap: .6rem; }
+  .site-nav { gap: .65rem; }
+  .site-nav nav { gap: 1.25rem; margin-inline: -.25rem; padding: .3rem .25rem .5rem; }
+  .nav-actions { margin-left: auto; }
+  .nav-actions .nav-icon:nth-child(2), .nav-actions .nav-icon:nth-child(3) { display: none; }
+}
+@media (max-width: 380px) { .case-study-shell { padding-inline: 1.25rem; } }

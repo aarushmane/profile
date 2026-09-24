@@ -2,16 +2,12 @@
 <div class="portfolio-shell">
     <section class="hero-grid">
         <div class="hero-copy">
-            <p class="eyebrow"><span class="pulse"></span> Available for thoughtful work</p>
-            <h1 class="hero-tagline">
-                <span>I build.</span>
-                <span>I learn.</span>
-                <span>I repeat.</span>
-            </h1>
-            <p class="hero-description">{{ .Site.Params.hero_description }}</p>
+            <p class="eyebrow">Hello, I'm</p>
+            <h1 class="hero-tagline"><span class="typed-title">Aarush Mane</span></h1>
+            <p class="hero-description">I'm a freshman studying Computer Science (B.S.E.) at Princeton University. I'm interested in computer vision, robotics, and building more capable autonomous systems.</p>
 
             <div class="hero-actions">
-                <a class="button button-primary" href="#projects">Explore projects <span>↗</span></a>
+                <a class="button button-primary" href="#projects">View my work <span>↗</span></a>
 
                 <a class="button button-quiet" href="{{ .Site.Params.resume_url_en | default "/resume.pdf" }}" target="_blank" rel="noopener noreferrer">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -24,37 +20,25 @@
                     Download Resume <span>↗</span>
                 </a>
 
-                <a class="button button-quiet" href="#contact">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    Contact
-                </a>
+
             </div>
 
-            <div class="hero-location">
-                <span class="status-dot"></span>{{ .Site.Params.hero_location }}
-                <span class="slash">/</span> Java · Python · OpenCV · ROS
-            </div>
         </div>
 
         <figure class="hero-portrait">
             <img src="{{ "media/TitleProfile-optimized.jpg" | relURL }}" alt="Aarush Mane" loading="eager">
             <figcaption>
-                <span class="status-dot"></span> Aarush Mane
-                <span>/</span> Computer science &amp; robotics
+                Princeton University · Computer Science
             </figcaption>
         </figure>
     </section>
 
     <section class="profile-section" id="about" aria-labelledby="about-title">
         <p class="profile-kicker">About me</p>
-        <h2 id="about-title">I like difficult problems and useful results.</h2>
+        <h2 id="about-title">Curious about how systems see, decide, and move.</h2>
 
         <div class="profile-copy">
-            <p>I work on autonomous systems, computer vision, data pipelines, and robotics strategy.</p>
-            <p>Outside of class and build season, I mentor younger developers, prototype ideas, and help engineering teams turn complex technical work into systems people rely on.</p>
+            <p>My work spans autonomous robotics, computer vision, and software. I also mentor younger robotics students and enjoy making technical ideas useful to others.</p>
         </div>
 
         <div class="profile-facts" aria-label="Technical Skills and Languages">

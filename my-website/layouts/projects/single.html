@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="case-study-shell">
     <header class="case-study-hero">
-        <a class="back-link" href="{{ "#projects" | relURL }}">← Back to projects</a>
+        <a class="back-link" href="{{ "/" | relURL }}#projects">← Back to projects</a>
         <p class="eyebrow">{{ .Params.category | default "Project case study" }}</p>
         <h1>{{ .Title }}</h1>
         <p class="case-study-summary">{{ .Params.summary | markdownify }}</p>
@@ -42,13 +42,6 @@
         </div>
 
         <aside class="case-study-aside">
-            <div class="aside-card">
-                <p class="eyebrow">Project note</p>
-                <p>
-                    This page focuses on the decisions, systems, and outcomes behind the work.
-                </p>
-            </div>
-
             {{ with .Params.external }}
             <a class="aside-link" href="{{ . }}" target="_blank" rel="noopener noreferrer">
                 View external project ↗

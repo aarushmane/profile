@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="case-study-shell research-case-study">
     <header class="case-study-hero">
-        <a class="back-link" href="{{ "/#civic-service" | relURL }}">← Back to civic service</a>
+        <a class="back-link" href="{{ "/" | relURL }}#civic-service">← Back to civic service</a>
 
         <p class="eyebrow">{{ .Params.eyebrow }}</p>
 
@@ -48,16 +48,6 @@
         </div>
 
         <aside class="case-study-aside">
-            <div class="aside-card">
-                <p class="eyebrow">Community note</p>
-
-                <p>
-                    This case study presents the problem, engineering work,
-                    mentorship, competition experience, and community impact
-                    behind FIRST Tech Challenge Team 22348 REAPR.
-                </p>
-            </div>
-
             {{ with .Params.media }}
                 <section class="case-study-gallery" aria-label="REAPR media">
                     <p class="aside-gallery-label">REAPR media</p>

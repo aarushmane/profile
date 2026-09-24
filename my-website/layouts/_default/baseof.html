@@ -12,10 +12,10 @@
     <header class="site-nav">
         <a class="brand" href="{{ "/" | relURL }}"><span class="brand-mark">AM</span><span>Aarush Mane</span></a>
         <nav aria-label="Main navigation">
-            <a href="{{ .Site.BaseURL }}#about">About</a>
-            <a href="{{ .Site.BaseURL }}#projects">Projects</a>
-            <a href="{{ .Site.BaseURL }}#research">Research</a>
-            <a href="{{ .Site.BaseURL }}#civic-service">Civic Service</a>
+            <a href="{{ "/" | relURL }}#about">About</a>
+            <a href="{{ "/" | relURL }}#projects">Projects</a>
+            <a href="{{ "/" | relURL }}#research">Research</a>
+            <a href="{{ "/" | relURL }}#civic-service">Civic Service</a>
         </nav>
         <div class="nav-actions">
             <a class="nav-icon" href="{{ .Site.Params.github_url }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
@@ -33,6 +33,7 @@
         </div>
     </header>
     <main>{{ block "main" . }}{{ end }}</main>
-    <footer class="site-footer"><span>© {{ now.Year }} Aarush Mane</span><span>Built with Hugo · CareerCanvas structure · Nerdy visual system</span></footer>
+    <footer class="site-footer"><span>© {{ now.Year }} Aarush Mane</span><span>Computer Science · Princeton University</span></footer>
+    <script src="{{ "js/home.js" | relURL }}" defer></script>
 </body>
 </html>
