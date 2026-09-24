@@ -2,14 +2,19 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   const name = document.querySelector('.typed-title');
-  if (name && window.matchMedia('(max-width: 760px)').matches) {
+  if (name) {
     const fullName = name.textContent;
-    name.setAttribute('aria-label', fullName);
+    name.parentElement.setAttribute('aria-label', fullName);
+    name.setAttribute('aria-hidden', 'true');
+    name.classList.add('is-typing');
     name.textContent = fullName.charAt(0);
     let position = 1;
     const timer = window.setInterval(() => {
       name.textContent = fullName.slice(0, ++position);
-      if (position >= fullName.length) window.clearInterval(timer);
+      if (position >= fullName.length) {
+        window.clearInterval(timer);
+        name.classList.remove('is-typing');
+      }
     }, 95);
   }
 
