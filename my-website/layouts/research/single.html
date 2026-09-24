@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="case-study-shell research-case-study">
     <header class="case-study-hero">
-        <a class="back-link" href="{{ "/" | relURL }}#research">← Back to research</a>
+        <a class="back-link" href="{{ .Site.Home.RelPermalink }}#research">← Back to research</a>
         <p class="eyebrow">{{ .Params.period }}</p>
         <h1>{{ .Title }}</h1>
         <p class="case-study-summary">{{ .Params.summary | markdownify }}</p>
@@ -19,7 +19,7 @@
     </div>
 
     <article class="case-study-content">
-        <div class="case-study-prose">{{ .Content }}</div>
+        <div class="case-study-prose terminal-window"><div class="window-chrome" aria-hidden="true"><span class="window-dots"></span><span>case-study.md</span></div>{{ .Content }}</div>
         <aside class="case-study-aside">
             {{ with .Params.media }}
             <section class="case-study-gallery" aria-label="Research media"><p class="aside-gallery-label">Research media</p>
