@@ -7,15 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
     name.parentElement.setAttribute('aria-label', fullName);
     name.setAttribute('aria-hidden', 'true');
     name.classList.add('is-typing');
-    name.textContent = fullName.charAt(0);
-    let position = 1;
+    name.textContent = '';
+    let position = 0;
     const timer = window.setInterval(() => {
       name.textContent = fullName.slice(0, ++position);
       if (position >= fullName.length) {
         window.clearInterval(timer);
-        name.classList.remove('is-typing');
+        window.setTimeout(() => name.classList.remove('is-typing'), 900);
       }
-    }, 95);
+    }, 140);
   }
 
   if (!('IntersectionObserver' in window)) return;
