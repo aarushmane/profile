@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>FIRST Robotics Competition (FRC) Robots on Aarush Mane</title>
-		<link>http://localhost:1313/projects/frc/</link>
+		<link>https://aarushmane.github.io/profile/projects/frc/</link>
 		<description>Recent content in FIRST Robotics Competition (FRC) Robots on Aarush Mane</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,26 +12,26 @@
 		
 			<lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/projects/frc/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://aarushmane.github.io/profile/projects/frc/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Medusa | 2026 FRC Robot</title>
-				<link>http://localhost:1313/projects/medusa-2026-frc-robot/</link>
+				<link>https://aarushmane.github.io/profile/projects/medusa-2026-frc-robot/</link>
 				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/projects/medusa-2026-frc-robot/</guid>
+				<guid>https://aarushmane.github.io/profile/projects/medusa-2026-frc-robot/</guid>
 				<description>Oculus Quest coprocessor localization, 3D pose tracking, autonomous scheduling, and analytics for Team 2590&amp;rsquo;s Medusa robot, which earned the &lt;strong&gt;2026 Innovation in Control Award&lt;/strong&gt;.</description>
 			</item>
 			<item>
 				<title>Leonidas | 2025 FRC Robot</title>
-				<link>http://localhost:1313/projects/leonidas-2025-frc-robot/</link>
+				<link>https://aarushmane.github.io/profile/projects/leonidas-2025-frc-robot/</link>
 				<pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/projects/leonidas-2025-frc-robot/</guid>
+				<guid>https://aarushmane.github.io/profile/projects/leonidas-2025-frc-robot/</guid>
 				<description>Vision, swerve autonomy, trajectory following, and simulation work for Team 2590&amp;rsquo;s Leonidas robot, which won &lt;strong&gt;2025 FMA Robbinsville robot performance&lt;/strong&gt;.</description>
 			</item>
 			<item>
 				<title>Kronos | 2024 FRC Robot</title>
-				<link>http://localhost:1313/projects/kronos-2024-frc-robot/</link>
+				<link>https://aarushmane.github.io/profile/projects/kronos-2024-frc-robot/</link>
 				<pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/projects/kronos-2024-frc-robot/</guid>
+				<guid>https://aarushmane.github.io/profile/projects/kronos-2024-frc-robot/</guid>
 				<description>Java command-based software, PathPlanner routines, and vision tools for Team 2590&amp;rsquo;s Kronos robot, which won its &lt;strong&gt;Championship Division&lt;/strong&gt; at Worlds.</description>
 			</item>
 	</channel>

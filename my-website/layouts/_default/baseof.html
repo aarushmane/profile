@@ -7,6 +7,10 @@
     <title>{{ if .IsHome }}{{ .Site.Title }} | Portfolio{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     {{ $styles := resources.Get "css/main.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+
+    <!-- TECH_BREADBOARD_THEME -->
+    {{ $techStyles := resources.Get "css/tech-breadboard.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $techStyles.RelPermalink }}">
 </head>
 <body>
     <header class="site-nav">
@@ -35,5 +39,6 @@
     <main>{{ block "main" . }}{{ end }}</main>
     <footer class="site-footer"><span>© {{ now.Year }} Aarush Mane</span><span>Computer Science · Princeton University</span></footer>
     <script src="{{ .Site.Home.RelPermalink }}js/home.js" defer></script>
+    <script src="{{ .Site.Home.RelPermalink }}js/pixel-interface.js" defer></script>
 </body>
 </html>
