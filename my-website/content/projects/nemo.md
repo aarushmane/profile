@@ -2,13 +2,13 @@
 title: "Nemo | Pollution Source Investigation"
 category: "Physics Modeling | Software Validation | Sustainability"
 group: "project"
-period: "HackHarvard | October 16-18, 2026"
-summary: "**3rd Overall Best Project** and **2nd, ASUS Save the Earth Sustainability Track** at HackHarvard. I conceived the Grok-assisted physics workflow, built validation and integrity checks, and pitched to judges and sponsors."
+period: "HackHarvard Undergraduate Hackathon | October 16-18, 2026"
+summary: "**3rd Overall Best Project** and **2nd, ASUS Save the Earth Sustainability Track** at HackHarvard Undergraduate Hackathon. I conceived the Grok-assisted physics workflow, built validation and integrity checks, and pitched to judges and sponsors."
 date: 2026-10-18
 external: "https://nemo-software-demo.onrender.com/"
 ---
 
-Nemo earned **3rd Overall Best Project** and **2nd in the ASUS “Save the Earth” Sustainability Track** at HackHarvard, October 16-18, 2026. Our team built a research prototype that connects webcam observations, pollution-source modeling, and ocean-current data to investigate possible debris pathways and compare interception layouts.
+Nemo earned **3rd Overall Best Project** and **2nd in the ASUS “Save the Earth” Sustainability Track** at HackHarvard Undergraduate Hackathon, October 16-18, 2026. Our team built a research prototype that connects webcam observations, pollution-source modeling, and ocean-current data to investigate possible debris pathways and compare interception layouts.
 
 ## My contribution: simulation workflow, validation, and pitching
 
@@ -31,6 +31,6 @@ The project compares candidate source regions under declared transport assumptio
 
 ## Outcome and next steps
 
-The two HackHarvard awards recognized the team's prototype. The physical source-inference and interception results still require independent validation. The next evaluation steps are blind known-source releases, separately recorded training and validation runs, and observed collection outcomes.
+The two HackHarvard Undergraduate Hackathon awards recognized the team's prototype. The physical source-inference and interception results still require independent validation. The next evaluation steps are blind known-source releases, separately recorded training and validation runs, and observed collection outcomes.
 
-[Try Nemo](https://nemo-software-demo.onrender.com/) · [Devpost submission and my contribution](https://devpost.com/software/nemo-i69rus) · [Source code](https://github.com/Jose-Gael-Cruz-Lopez/reeftrace) · [HackHarvard](https://hhuh.io/)
+[Try Nemo](https://nemo-software-demo.onrender.com/) · [Devpost submission and my contribution](https://devpost.com/software/nemo-i69rus) · [Source code](https://github.com/Jose-Gael-Cruz-Lopez/reeftrace) · [HackHarvard Undergraduate Hackathon](https://hhuh.io/)

@@ -1,0 +1,21 @@
+<div class="trajectory-study" aria-label="Interactive illustration of trajectory tracking">
+    <div class="study-heading"><span>TRY THE FEEDBACK LOOP</span><span class="study-status">1. Choose a route</span></div>
+    <svg class="trajectory-plot" viewBox="0 0 440 300" role="img" aria-labelledby="trajectory-title trajectory-desc">
+        <title id="trajectory-title">Help the robot reach its goal.</title>
+        <desc id="trajectory-desc">The blue dot represents a robot. Compare its planned route, a disturbance that pushes it off course, and steering corrections that bring it back to the goal.</desc>
+        <defs><pattern id="plot-dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="currentColor" opacity=".23"/></pattern></defs>
+        <rect width="440" height="300" fill="url(#plot-dots)"/>
+        <circle cx="211" cy="155" r="31" class="robot-obstacle"/><text class="plot-label" x="184" y="159">obstacle</text><g class="plot-axes"><path d="M34 24V266H410"/><path d="M29 68H39M29 134H39M29 200H39M100 261V271M200 261V271M300 261V271M400 261V271"/></g>
+        <text class="plot-label" x="17" y="25">y</text><text class="plot-label" x="412" y="283">x</text>
+        <path class="reference-path" d="M45 234C112 234 92 80 193 80S301 221 396 57"/>
+        <path class="motion-path" id="motion-path" d="M45 234C112 234 92 80 193 80S301 221 396 57"/>
+        <circle class="path-origin" cx="45" cy="234" r="4"/>
+        <g class="path-target"><path d="M386 47h-6v6M406 47h6v6M386 67h-6v-6M406 67h6v-6"/><circle cx="396" cy="57" r="2"/></g>
+        <g class="moving-probe"><circle class="probe-halo" r="13"/><circle class="probe-dot" r="4"/><path d="M-7 0H7M0-7V7"/><animateMotion id="probe-motion" dur="9s" repeatCount="indefinite" path="M45 234C112 234 92 80 193 80S301 221 396 57"/></g>
+        <text class="plot-label" x="48" y="257">robot starts here</text><text class="plot-label" x="331" y="32">goal</text>
+    </svg>
+    <p class="plot-legend"><span>— Blue: robot’s route</span><span>┄ Dashed: planned route</span></p>
+    <div class="study-controls" role="group" aria-label="Trajectory illustration mode"><button type="button" data-trajectory="plan" aria-pressed="true">Plan route</button><button type="button" data-trajectory="drift" aria-pressed="false">Add a push</button><button type="button" data-trajectory="track" aria-pressed="false">Correct it</button><button type="button" class="motion-toggle" aria-pressed="false" aria-label="Pause trajectory animation">Ⅱ</button></div>
+    <p class="study-caption" aria-live="polite">Follow the blue robot from start to goal. Try adding a push, then correcting it.</p>
+    <p class="study-disclaimer">An illustrative sketch, not measured data.</p>
+</div>

@@ -7,20 +7,18 @@
     <meta name="description" content="Aarush Mane&#39;s portfolio of robotics software, research, and civic work.">
     <title>Aarush Mane | Portfolio</title>
     
-    <link rel="stylesheet" href="/css/main.min.4e7b7beed9681571636514e11936d6088e60a35bf9e2f227d926a62d0b1085e2.css">
+    <link rel="stylesheet" href="/css/main.min.125c8917e798994968b1e59bcd42b09335dfaed3cd8258ff7815b9915eb10682.css">
 
-    
-    
-    <link rel="stylesheet" href="/css/tech-breadboard.min.fd819db35a8f6130bcd4363ef05a2559e75908c00303b85f13aa772c0c358e96.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-nav">
-        <a class="brand" href="/">Aarush Mane</a>
+        <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">a<span>m</span></span><span class="brand-name">Aarush Mane</span></a>
         <nav aria-label="Main navigation">
             <a href="/#about">About</a>
             <a href="/#projects">Projects</a>
             <a href="/#research">Research</a>
-            <a href="/#civic-service">Civic Service</a>
+            <a href="/#civic-service">Community</a>
         </nav>
         <div class="nav-actions">
             <a class="nav-icon" href="https://github.com/aarushmane" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
@@ -37,602 +35,83 @@
             </a>
         </div>
     </header>
-    <main>
+    <div class="reading-progress" aria-hidden="true"></div>
+    <main id="main">
 
 <div class="portfolio-shell">
-    <section class="hero-grid">
-        <div class="hero-copy terminal-window">
-            <div class="window-chrome" aria-hidden="true"><span class="window-dots"></span><span>aarush@princeton: ~</span></div>
-            <p class="eyebrow terminal-prompt">Hello, I'm</p>
-            <h1 class="hero-tagline"><span class="typed-title">Aarush Mane</span></h1>
-            <p class="hero-description">I'm a freshman studying Computer Science (B.S.E.) at Princeton University. I'm interested in computer vision, robotics, and building more capable autonomous systems.</p>
+<section class="opening-title" aria-label="Introduction">
+    <div class="opening-stack"><h1 aria-label="Aarush Mane"><span class="opening-name" aria-hidden="true">Aarush Mane<span class="opening-period">.</span></span></h1>
+    <div class="tagline-origin"><h2 class="traveling-tagline" aria-label="I build software for things that move."><span class="traveling-text" aria-hidden="true">I build software for things that move.</span></h2></div></div>
+    <a class="opening-scroll" href="#about"><span>Scroll to explore</span><span class="opening-scroll-line" aria-hidden="true"></span><span aria-hidden="true">↓</span></a>
+</section>
+<section class="intro intro-sequence" id="about">
+    <div class="tagline-target intro-statement" aria-hidden="true"></div>
+    <div class="intro-reveal">
+        <div class="intro-copy"><p class="intro-context"><span class="context-mark" aria-hidden="true">⌁</span> Computer Science · Princeton University</p><p class="intro-description">I'm a freshman studying Computer Science (B.S.E.) at Princeton. My work spans computer vision, autonomous robotics, and the experiments that tell us whether a system actually works.</p><div class="intro-links"><a href="#projects">Selected work ↓</a><a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume ↗</a><a href="mailto:am6927@princeton.edu">Get in touch ↗</a></div></div>
+        <figure class="about-portrait"><img src="/media/TitleProfile-optimized.jpg" alt="Aarush Mane standing beside a stone column" loading="lazy"><figcaption>Aarush Mane · Princeton University</figcaption></figure>
+    </div>
+    <div class="controls-feature">
+        <div class="controls-intro"><p class="small-heading">A small look at how I think</p><h3>Plan. Observe.<br> Adjust.</h3><p>A robot needs more than a route. It needs to notice when the world pushes it off course and steer back.</p><p>That feedback loop connects my work in computer vision, motion control, and robotics.</p><a class="text-link" href="/research/ieee-pid-control/">Explore my controls research ↗</a></div>
+        <div class="trajectory-study" aria-label="Interactive illustration of trajectory tracking">
+    <div class="study-heading"><span>TRY THE FEEDBACK LOOP</span><span class="study-status">1. Choose a route</span></div>
+    <svg class="trajectory-plot" viewBox="0 0 440 300" role="img" aria-labelledby="trajectory-title trajectory-desc">
+        <title id="trajectory-title">Help the robot reach its goal.</title>
+        <desc id="trajectory-desc">The blue dot represents a robot. Compare its planned route, a disturbance that pushes it off course, and steering corrections that bring it back to the goal.</desc>
+        <defs><pattern id="plot-dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="currentColor" opacity=".23"/></pattern></defs>
+        <rect width="440" height="300" fill="url(#plot-dots)"/>
+        <circle cx="211" cy="155" r="31" class="robot-obstacle"/><text class="plot-label" x="184" y="159">obstacle</text><g class="plot-axes"><path d="M34 24V266H410"/><path d="M29 68H39M29 134H39M29 200H39M100 261V271M200 261V271M300 261V271M400 261V271"/></g>
+        <text class="plot-label" x="17" y="25">y</text><text class="plot-label" x="412" y="283">x</text>
+        <path class="reference-path" d="M45 234C112 234 92 80 193 80S301 221 396 57"/>
+        <path class="motion-path" id="motion-path" d="M45 234C112 234 92 80 193 80S301 221 396 57"/>
+        <circle class="path-origin" cx="45" cy="234" r="4"/>
+        <g class="path-target"><path d="M386 47h-6v6M406 47h6v6M386 67h-6v-6M406 67h6v-6"/><circle cx="396" cy="57" r="2"/></g>
+        <g class="moving-probe"><circle class="probe-halo" r="13"/><circle class="probe-dot" r="4"/><path d="M-7 0H7M0-7V7"/><animateMotion id="probe-motion" dur="9s" repeatCount="indefinite" path="M45 234C112 234 92 80 193 80S301 221 396 57"/></g>
+        <text class="plot-label" x="48" y="257">robot starts here</text><text class="plot-label" x="331" y="32">goal</text>
+    </svg>
+    <p class="plot-legend"><span>— Blue: robot’s route</span><span>┄ Dashed: planned route</span></p>
+    <div class="study-controls" role="group" aria-label="Trajectory illustration mode"><button type="button" data-trajectory="plan" aria-pressed="true">Plan route</button><button type="button" data-trajectory="drift" aria-pressed="false">Add a push</button><button type="button" data-trajectory="track" aria-pressed="false">Correct it</button><button type="button" class="motion-toggle" aria-pressed="false" aria-label="Pause trajectory animation">Ⅱ</button></div>
+    <p class="study-caption" aria-live="polite">Follow the blue robot from start to goal. Try adding a push, then correcting it.</p>
+    <p class="study-disclaimer">An illustrative sketch, not measured data.</p>
+</div>
 
-            <div class="hero-actions">
-                <a class="button button-primary" href="#projects">View my work <span>↗</span></a>
+    </div>
+</section>
 
-                <a class="button button-quiet" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                        <polyline points="14 2 14 8 20 8"></polyline>
-                        <line x1="16" y1="13" x2="8" y2="13"></line>
-                        <line x1="16" y1="17" x2="8" y2="17"></line>
-                        <polyline points="10 9 9 9 8 9"></polyline>
-                    </svg>
-                    Download Resume <span>↗</span>
-                </a>
-            </div>
-        </div>
+<section class="work-section" id="projects" aria-labelledby="work-title">
+<div class="section-heading"><h2 id="work-title">Selected work</h2><span>2024 — 2026</span></div>
 
-        <figure class="hero-portrait">
-            <div class="window-chrome" aria-hidden="true"><span class="window-dots"></span><span>profile.jpg</span></div>
-            <img src="/media/TitleProfile-optimized.jpg" alt="Aarush Mane" loading="eager">
-            <figcaption>
-                Princeton University · Computer Science
-            </figcaption>
-        </figure>
-    </section>
+<article class="work-entry"><span class="work-index">01</span><div class="work-body"><p class="work-context">HackHarvard Undergraduate Hackathon | October 16-18, 2026</p><h3><a href="/projects/nemo-pollution-source-investigation/">Nemo | Pollution Source Investigation <span class="work-arrow" aria-hidden="true">↗</span></a></h3>
+<p>I conceived the Grok-assisted physics workflow, wrote simulation instructions, and built experiment-validation and SHA-256 integrity checks. I also pitched the project to judges and sponsors.</p><ul class="work-honors" aria-label="HackHarvard Undergraduate Hackathon awards"><li><strong>3rd overall</strong> · HackHarvard Undergraduate Hackathon</li><li><strong>2nd</strong> · ASUS Save the Earth Sustainability Track</li></ul>
+<div class="work-links"><a href="/projects/nemo-pollution-source-investigation/">Read case study ↗</a><a href="https://nemo-software-demo.onrender.com/" target="_blank" rel="noopener noreferrer">Live demo ↗</a></div></div><span class="work-discipline">Python / RK4<br>SHA-256 / Validation</span></article>
 
-    <section class="profile-section" id="about" aria-labelledby="about-title">
-        <p class="profile-kicker">About me</p>
-        <h2 id="about-title">Curious about how systems see, decide, and move.</h2>
+<article class="work-entry"><span class="work-index">02</span><div class="work-body"><p class="work-context">FIRST Robotics Competition Team 2590 | 2026</p><h3><a href="/projects/argus-panoptes-chatbot/">Argus Panoptes Chatbot <span class="work-arrow" aria-hidden="true">↗</span></a></h3>
+<p>An autonomous Slack agent that turns robotics APIs, scouting data, and match logs into searchable analysis and useful graphics.</p>
+<div class="work-links"><a href="/projects/argus-panoptes-chatbot/">Read case study ↗</a></div></div><span class="work-discipline">Python / MiniMax<br>Slack / GitHub Actions</span></article>
 
-        <div class="profile-copy">
-            <p>My work spans autonomous robotics, computer vision, and software. I also mentor younger robotics students and enjoy making technical ideas useful to others.</p>
-        </div>
+<article class="work-entry"><span class="work-index">03</span><div class="work-body"><p class="work-context">2026 | REBUILT</p><h3><a href="/projects/medusa-2026-frc-robot/">Medusa | 2026 FRC Robot <span class="work-arrow" aria-hidden="true">↗</span></a></h3>
+<p>Oculus Quest coprocessor localization, 3D pose tracking, autonomous scheduling, and analytics for Team 2590&rsquo;s Medusa robot, which earned the <strong>2026 Innovation in Control Award</strong>.</p>
+<div class="work-links"><a href="/projects/medusa-2026-frc-robot/">Read case study ↗</a></div></div><span class="work-discipline">Java / OpenCV<br>Autonomous control</span></article>
 
-        <div class="profile-facts" aria-label="Technical Skills and Languages">
-            <div class="fact-row">
-                <span class="fact-label">Programming Languages:</span>
-                <div class="fact-pills">
-                    <span class="static-pill">Java</span>
-                    <span class="static-pill">Python</span>
-                    <span class="static-pill">MATLAB</span>
-                    <span class="static-pill">HTML/CSS</span>
-                </div>
-            </div>
+<article class="work-entry"><span class="work-index">04</span><div class="work-body"><p class="work-context">iStart Valley | Jan 2025 - Jun 2025</p><h3><a href="/projects/istart-valley-biopack-startup-pitch/">iStart Valley | BioPack Startup Pitch <span class="work-arrow" aria-hidden="true">↗</span></a></h3>
+<p>A BioPack concept, market analysis, and venture pitch that earned Global Semifinalist placement. It was a proposal, not a launched company.</p>
+<div class="work-links"><a href="/projects/istart-valley-biopack-startup-pitch/">Read case study ↗</a></div></div><span class="work-discipline">Market analysis<br>Financial modeling</span></article>
 
-            <div class="fact-row">
-                <span class="fact-label">Tools & Frameworks:</span>
-                <div class="fact-pills">
-                    <span class="static-pill">OpenCV</span>
-                    <span class="static-pill">TensorFlow</span>
-                    <span class="static-pill">ROS</span>
-                    <span class="static-pill">GazeboSim</span>
-                    <span class="static-pill">Git</span>
-                    <span class="static-pill">Vicon</span>
-                </div>
-            </div>
+<article class="work-entry"><span class="work-index">05</span><div class="work-body"><p class="work-context">2025 | Reefscape</p><h3><a href="/projects/leonidas-2025-frc-robot/">Leonidas | 2025 FRC Robot <span class="work-arrow" aria-hidden="true">↗</span></a></h3>
+<p>Vision, swerve autonomy, trajectory following, and simulation work for Team 2590&rsquo;s Leonidas robot, which won <strong>2025 FMA Robbinsville robot performance</strong>.</p>
+<div class="work-links"><a href="/projects/leonidas-2025-frc-robot/">Read case study ↗</a><a href="https://github.com/Team2590/2025_Robot_Base_Project" target="_blank" rel="noopener noreferrer">Project link ↗</a></div></div><span class="work-discipline">Java / OpenCV<br>Autonomous control</span></article>
 
-            <div class="fact-row">
-                <span class="fact-label">Spoken Languages:</span>
-                <div class="fact-pills">
-                    <span class="static-pill">English (Native)</span>
-                    <span class="static-pill">Spanish (Fluent)</span>
-                    <span class="static-pill">Telugu (Fluent)</span>
-                </div>
-            </div>
-        </div>
-    </section>
+<article class="work-entry"><span class="work-index">06</span><div class="work-body"><p class="work-context">2024 | Crescendo</p><h3><a href="/projects/kronos-2024-frc-robot/">Kronos | 2024 FRC Robot <span class="work-arrow" aria-hidden="true">↗</span></a></h3>
+<p>Java command-based software, PathPlanner routines, and vision tools for Team 2590&rsquo;s Kronos robot, which won its <strong>Championship Division</strong> at Worlds.</p>
+<div class="work-links"><a href="/projects/kronos-2024-frc-robot/">Read case study ↗</a><a href="https://github.com/Team2590/FRC2024-Robot-Code" target="_blank" rel="noopener noreferrer">Project link ↗</a></div></div><span class="work-discipline">Java / OpenCV<br>Autonomous control</span></article>
 
-    <section class="section-block" id="education">
-        <div class="section-heading">
-            <div>
-                <p class="eyebrow">01 / Education</p>
-                <h2>A short academic snapshot.</h2>
-            </div>
-            <span class="section-note"></span>
-        </div>
-
-        <div class="education-grid">
-            
-                <article class="info-card">
-                    <p class="card-meta">Expected May 2030</p>
-                    <h3>B.S.E. Computer Science</h3>
-                    <p class="muted">Princeton University | Princeton, NJ</p>
-                    <p>Computer Science undergraduate. Dual-enrollment coursework includes Single Variable Analysis (MAT215) and Linear Algebra with Intro to Proofs (MAT217).</p>
-                </article>
-            
-                <article class="info-card">
-                    <p class="card-meta">September 2022 - June 2026</p>
-                    <h3>High School Diploma</h3>
-                    <p class="muted">Robbinsville High School | Robbinsville, NJ</p>
-                    <p>Weighted GPA <strong>4.682/5.0</strong> | Unweighted GPA <strong>3.977/4.0</strong> | SAT <strong>1530</strong> | Won a <strong>$2,500 National Merit Scholarship</strong> (<strong>&lt;1% acceptance rate</strong>) | AP Scholar with Distinction | NJ State Seal of Biliteracy, Spanish.</p>
-                </article>
-            
-        </div>
-    </section>
-
-    <section class="section-block" id="projects">
-        <div class="section-heading">
-            <div>
-                <p class="eyebrow">02 / Projects</p>
-                <h2>Systems with a job to do.</h2>
-            </div>
-        </div>
-
-        <div class="project-bento">
-            
-                <article class="project-tile terminal-window">
-                    <div class="window-chrome" aria-hidden="true"><span class="window-dots"></span><span>~/projects/nemo</span></div>
-                    <div class="tile-top">
-                        <span class="tag">Physics Modeling | Software Validation | Sustainability</span>
-                        <span class="tile-arrow">↗</span>
-                    </div>
-
-                    <div>
-                        <p class="card-meta">HackHarvard | October 16-18, 2026</p>
-                        <h3>Nemo | Pollution Source Investigation</h3>
-                        <p><strong>3rd Overall Best Project</strong> and <strong>2nd, ASUS Save the Earth Sustainability Track</strong> at HackHarvard. I conceived the Grok-assisted physics workflow, built validation and integrity checks, and pitched to judges and sponsors.</p>
-                    </div>
-
-                    <div class="tile-actions">
-                        <a class="tile-footer" href="/projects/nemo-pollution-source-investigation/">
-                            Case study <span>→</span>
-                        </a>
-
-                        
-                            <a class="tile-footer tile-footer-external" href="https://nemo-software-demo.onrender.com/" target="_blank" rel="noopener noreferrer">
-                                Project link <span>↗</span>
-                            </a>
-                        
-                    </div>
-                </article>
-            
-                <article class="project-tile terminal-window">
-                    <div class="window-chrome" aria-hidden="true"><span class="window-dots"></span><span>~/projects/argus</span></div>
-                    <div class="tile-top">
-                        <span class="tag">AI | Data | Robotics Strategy</span>
-                        <span class="tile-arrow">↗</span>
-                    </div>
-
-                    <div>
-                        <p class="card-meta">FIRST Robotics Competition Team 2590 | 2026</p>
-                        <h3>Argus Panoptes Chatbot</h3>
-                        <p>An autonomous Slack agent that turns robotics APIs, scouting data, and match logs into searchable analysis and useful graphics.</p>
-                    </div>
-
-                    <div class="tile-actions">
-                        <a class="tile-footer" href="/projects/argus-panoptes-chatbot/">
-                            Case study <span>→</span>
-                        </a>
-
-                        
-                    </div>
-                </article>
-            
-                <article class="project-tile terminal-window">
-                    <div class="window-chrome" aria-hidden="true"><span class="window-dots"></span><span>~/projects/2026</span></div>
-                    <div class="tile-top">
-                        <span class="tag">FIRST Robotics Competition | Medusa</span>
-                        <span class="tile-arrow">↗</span>
-                    </div>
-
-                    <div>
-                        <p class="card-meta">2026 | REBUILT</p>
-                        <h3>Medusa | 2026 FRC Robot</h3>
-                        <p>Oculus Quest coprocessor localization, 3D pose tracking, autonomous scheduling, and analytics for Team 2590&rsquo;s Medusa robot, which earned the <strong>2026 Innovation in Control Award</strong>.</p>
-                    </div>
-
-                    <div class="tile-actions">
-                        <a class="tile-footer" href="/projects/medusa-2026-frc-robot/">
-                            Case study <span>→</span>
-                        </a>
-
-                        
-                    </div>
-                </article>
-            
-                <article class="project-tile terminal-window">
-                    <div class="window-chrome" aria-hidden="true"><span class="window-dots"></span><span>~/projects/biopack</span></div>
-                    <div class="tile-top">
-                        <span class="tag">Strategy | Innovation | Entrepreneurship</span>
-                        <span class="tile-arrow">↗</span>
-                    </div>
-
-                    <div>
-                        <p class="card-meta">iStart Valley | Jan 2025 - Jun 2025</p>
-                        <h3>iStart Valley | BioPack Startup Pitch</h3>
-                        <p>A BioPack concept, market analysis, and venture pitch that earned Global Semifinalist placement. It was a proposal, not a launched company.</p>
-                    </div>
-
-                    <div class="tile-actions">
-                        <a class="tile-footer" href="/projects/istart-valley-biopack-startup-pitch/">
-                            Case study <span>→</span>
-                        </a>
-
-                        
-                    </div>
-                </article>
-            
-                <article class="project-tile terminal-window">
-                    <div class="window-chrome" aria-hidden="true"><span class="window-dots"></span><span>~/projects/2025</span></div>
-                    <div class="tile-top">
-                        <span class="tag">FIRST Robotics Competition | Leonidas</span>
-                        <span class="tile-arrow">↗</span>
-                    </div>
-
-                    <div>
-                        <p class="card-meta">2025 | Reefscape</p>
-                        <h3>Leonidas | 2025 FRC Robot</h3>
-                        <p>Vision, swerve autonomy, trajectory following, and simulation work for Team 2590&rsquo;s Leonidas robot, which won <strong>2025 FMA Robbinsville robot performance</strong>.</p>
-                    </div>
-
-                    <div class="tile-actions">
-                        <a class="tile-footer" href="/projects/leonidas-2025-frc-robot/">
-                            Case study <span>→</span>
-                        </a>
-
-                        
-                            <a class="tile-footer tile-footer-external" href="https://github.com/Team2590/2025_Robot_Base_Project" target="_blank" rel="noopener noreferrer">
-                                Project link <span>↗</span>
-                            </a>
-                        
-                    </div>
-                </article>
-            
-                <article class="project-tile terminal-window">
-                    <div class="window-chrome" aria-hidden="true"><span class="window-dots"></span><span>~/projects/2024</span></div>
-                    <div class="tile-top">
-                        <span class="tag">FIRST Robotics Competition | Kronos</span>
-                        <span class="tile-arrow">↗</span>
-                    </div>
-
-                    <div>
-                        <p class="card-meta">2024 | Crescendo</p>
-                        <h3>Kronos | 2024 FRC Robot</h3>
-                        <p>Java command-based software, PathPlanner routines, and vision tools for Team 2590&rsquo;s Kronos robot, which won its <strong>Championship Division</strong> at Worlds.</p>
-                    </div>
-
-                    <div class="tile-actions">
-                        <a class="tile-footer" href="/projects/kronos-2024-frc-robot/">
-                            Case study <span>→</span>
-                        </a>
-
-                        
-                            <a class="tile-footer tile-footer-external" href="https://github.com/Team2590/FRC2024-Robot-Code" target="_blank" rel="noopener noreferrer">
-                                Project link <span>↗</span>
-                            </a>
-                        
-                    </div>
-                </article>
-            
-        </div>
-    </section>
-
-    <section class="section-block research-block" id="research">
-        <div class="section-heading">
-            <div>
-                <p class="eyebrow">03 / Research</p>
-                <h2>A published study built from simulation and testing.</h2>
-            </div>
-        </div>
-
-        <article class="research-card terminal-window">
-            <div class="window-chrome" aria-hidden="true"><span class="window-dots"></span><span>research.md</span></div>
-            <p class="project-card-meta">
-                IEEE MIT Undergraduate Research Technology Conference | Presented October 2025
-            </p>
-
-            <h3>
-                PID Control Optimization and Trajectory Tracking for Autonomous Differential Drive Robots
-            </h3>
-
-            <p>
-                I co-authored a non-linear PID controller with moving integral windows,
-                velocity-dependent target yaws, and anti-windup limits. We compared A* and
-                Dijkstra path generation, modeled LiDAR obstacle avoidance in ROS GazeboSim,
-                and tested the controller with TurtleBot Vicon tracking and matched-pairs
-                tests at p &lt; 0.01.
-            </p>
-
-            <div class="link-row">
-                <a class="button button-small" href="https://ieeexplore.ieee.org/document/11533106" target="_blank" rel="noopener noreferrer">
-                    IEEE paper
-                </a>
-
-                <a class="button button-small" href="https://drive.google.com/file/d/18ED5a_aI4rQM_JSxM_MhHVoMt1Xh2ltn/view" target="_blank" rel="noopener noreferrer">
-                    Extended Paper PDF
-                </a>
-
-                <a class="button button-small" href="https://youtu.be/6KWDjNa425o" target="_blank" rel="noopener noreferrer">
-                    Symposium video
-                </a>
-            </div>
-
-            <a class="tile-footer research-case-link" href="/research/ieee-pid-control/">
-                Case study <span>→</span>
-            </a>
-        </article>
-    </section>
-
-    <section class="section-block civic-service-block" id="civic-service">
-        <div class="section-heading">
-            <div>
-                <p class="eyebrow">04 / Civic Service</p>
-                <h2>Building opportunities, not just robots.</h2>
-            </div>
-        </div>
-
-        
-            <article class="civic-feature-card">
-                <div class="civic-feature-main">
-                    <div class="civic-feature-heading">
-                        <div>
-                            <p class="card-meta">FIRST Tech Challenge Team 22348 | Founder, Mentor &amp; Drive Coach</p>
-                            <h3>FIRST Tech Challenge | REAPR</h3>
-                            <p class="civic-role">
-                                October 2022 - June 2026 · FIRST Tech Challenge Team 22348 | REAPR
-                            </p>
-                        </div>
-                    </div>
-
-                    <p class="civic-summary">
-                        I founded REAPR to expand access to competitive robotics in my community, then grew from team founder to mentor and drive coach as the program developed.
-                    </p>
-
-                    <div class="civic-highlights">
-                        
-                            <div class="civic-highlight">
-                                <span class="civic-highlight-dot"></span>
-                                <span>Founded REAPR to expand the robotics pipeline in Robbinsville, growing a student-led team into a program serving dozens of students.</span>
-                            </div>
-                        
-                            <div class="civic-highlight">
-                                <span class="civic-highlight-dot"></span>
-                                <span>Secured <strong>$16,000+</strong> in sponsorships and grants to cover GoBILDA parts, electronics, registration, and competition costs.</span>
-                            </div>
-                        
-                            <div class="civic-highlight">
-                                <span class="civic-highlight-dot"></span>
-                                <span>Built and taught students through Java, autonomous navigation, computer vision, and a TensorFlow target-tracking model trained on <strong>tens of thousands of samples</strong>.</span>
-                            </div>
-                        
-                            <div class="civic-highlight">
-                                <span class="civic-highlight-dot"></span>
-                                <span>Helped grow robotics participation in Robbinsville by <strong>30%</strong> and qualified for the <strong>2024 New Jersey State Championship</strong>.</span>
-                            </div>
-                        
-                    </div>
-
-                    <div class="tile-actions">
-                        <a class="tile-footer civic-case-link" href="/experience/ftc/">
-                            Case study <span>→</span>
-                        </a>
-
-                        
-                            <a class="button button-small" href="https://ftc-events.firstinspires.org/2022/team/22348" target="_blank" rel="noopener noreferrer">
-                                FIRST team page ↗
-                            </a>
-                        
-                    </div>
-                </div>
-
-                
-                    <div
-                        class="civic-feature-media"
-                        style="
-                            display: grid;
-                            grid-template-columns: 1fr;
-                            gap: 1rem;
-                            align-content: start;
-                            height: auto;
-                            min-height: 0;
-                            background: transparent;
-                        "
-                    >
-                        
-                            <figure
-                                style="
-                                    background: transparent;
-                                    border: 0;
-                                    border-radius: 0;
-                                    height: auto;
-                                    margin: 0;
-                                    overflow: hidden;
-                                "
-                            >
-                                <a
-                                    href="/media/FTC1.JPG"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    style="
-                                        display: block;
-                                        background: transparent;
-                                    "
-                                >
-                                    <img
-                                        src="/media/FTC1.JPG"
-                                        alt="FIRST Tech Challenge Team 22348 REAPR with its robot"
-                                        loading="lazy"
-                                        style="
-                                            display: block;
-                                            width: 100%;
-                                            height: auto;
-                                            min-height: 0;
-                                            object-fit: contain;
-                                            object-position: center;
-                                            background: transparent;
-                                        "
-                                    >
-                                </a>
-
-                                
-                                    <figcaption style="background: transparent;">
-                                        REAPR grew from a community robotics initiative into a competitive student-led team.
-                                    </figcaption>
-                                
-                            </figure>
-                        
-                            <figure
-                                style="
-                                    background: transparent;
-                                    border: 0;
-                                    border-radius: 0;
-                                    height: auto;
-                                    margin: 0;
-                                    overflow: hidden;
-                                "
-                            >
-                                <a
-                                    href="/media/FTC2.JPG"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    style="
-                                        display: block;
-                                        background: transparent;
-                                    "
-                                >
-                                    <img
-                                        src="/media/FTC2.JPG"
-                                        alt="FIRST Tech Challenge Team 22348 REAPR competing with its robot"
-                                        loading="lazy"
-                                        style="
-                                            display: block;
-                                            width: 100%;
-                                            height: auto;
-                                            min-height: 0;
-                                            object-fit: contain;
-                                            object-position: center;
-                                            background: transparent;
-                                        "
-                                    >
-                                </a>
-
-                                
-                                    <figcaption style="background: transparent;">
-                                        After joining FRC, I returned to REAPR as a mentor and later served as lead software developer and drive coach.
-                                    </figcaption>
-                                
-                            </figure>
-                        
-                    </div>
-                
-            </article>
-        
-    </section>
-
-    <section class="section-block recognition-block">
-        <div class="section-heading">
-            <div>
-                <p class="eyebrow">05 / Awards</p>
-                <h2>Awards and milestones.</h2>
-            </div>
-        </div>
-
-        <div class="recognition-grid">
-            
-                <article class="recognition-item">
-                    <p class="card-meta">2026</p>
-                    <h3>HackHarvard | Nemo</h3>
-                    
-                    <ul class="award-placements" aria-label="Award placements">
-                        
-                        <li>
-                            <strong class="award-rank">3rd</strong>
-                            <div class="award-description">
-                                <span>Overall Best Project</span>
-                                
-                            </div>
-                        </li>
-                        
-                        <li>
-                            <strong class="award-rank">2nd</strong>
-                            <div class="award-description">
-                                <span>ASUS Save the Earth</span>
-                                <small>Sustainability Track</small>
-                            </div>
-                        </li>
-                        
-                    </ul>
-                    
-                    
-                    <a class="award-project-link" href="/projects/nemo-pollution-source-investigation/">Explore Nemo <span aria-hidden="true">→</span></a>
-                    
-                </article>
-            
-                <article class="recognition-item">
-                    <p class="card-meta">2024</p>
-                    <h3>2024 AIME Qualifier</h3>
-                    
-                    <p>Qualified for the American Invitational Mathematics Examination through <strong>strong performance</strong> on the AMC competition series.</p>
-                    
-                    
-                </article>
-            
-                <article class="recognition-item">
-                    <p class="card-meta">2024</p>
-                    <h3>FIRST World Championship Division Winner</h3>
-                    
-                    <p>Won the team&rsquo;s division at the 2024 FIRST World Championship with Kronos after a season of autonomous, vision, and match-strategy work.</p>
-                    
-                    
-                </article>
-            
-                <article class="recognition-item">
-                    <p class="card-meta">2026</p>
-                    <h3>Innovation in Control Award</h3>
-                    
-                    <p>Won the FIRST Innovation in Control Award at the 2026 FMA Robbinsville District Event for an Oculus Quest navigation system, a cloud debugging chatbot, and scouting analytics that linked robot performance to match strategy.</p>
-                    
-                    
-                </article>
-            
-                <article class="recognition-item">
-                    <p class="card-meta">2026</p>
-                    <h3>National Merit Scholarship Winner</h3>
-                    
-                    <p>Named a National Merit Scholarship winner for academic achievement and <strong>PSAT/NMSQT performance</strong>.</p>
-                    
-                    
-                </article>
-            
-                <article class="recognition-item">
-                    <p class="card-meta">2024 &amp; 2025</p>
-                    <h3>Purple Comet Math Meet | Team Winner</h3>
-                    
-                    <p>Won the Purple Comet Math Meet team contest in 2024 and 2025 by solving timed problems in algebra, geometry, number theory, and combinatorics.</p>
-                    
-                    
-                </article>
-            
-        </div>
-    </section>
-
-    <section class="contact-panel" id="contact">
-        <div class="contact-copy">
-            <p class="eyebrow">06 / Contact</p>
-            <h2>Have a problem worth solving?</h2>
-            <p>
-                Reach out about robotics, research, software, or potential technical partnerships.
-            </p>
-        </div>
-
-        <div class="contact-buttons">
-            <a class="button button-primary" href="mailto:am6927@princeton.edu">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
-                am6927@princeton.edu <span>↗</span>
-            </a>
-
-            <a class="button button-quiet" href="https://github.com/aarushmane" target="_blank" rel="noopener noreferrer">
-                GitHub <span>↗</span>
-            </a>
-
-            <a class="button button-quiet" href="https://www.linkedin.com/in/aarush-mane/" target="_blank" rel="noopener noreferrer">
-                LinkedIn <span>↗</span>
-            </a>
-
-            <a class="button button-quiet" href="https://ieeexplore.ieee.org/author/120619555333829" target="_blank" rel="noopener noreferrer">
-                IEEE Xplore <span>↗</span>
-            </a>
-        </div>
-    </section>
+</section>
+<section class="research-section" id="research" aria-labelledby="research-title"><div class="section-heading"><h2 id="research-title">Research</h2><span>Published in IEEE Xplore</span></div><div class="research-feature"><p class="research-margin">IEEE MIT URTC<br>October 2025<br><br>Co-author</p><div><h3><a href="/research/ieee-pid-control/">PID control optimization &amp; trajectory tracking for autonomous robots ↗</a></h3><p>I co-authored a nonlinear PID controller with moving integral windows, velocity-dependent target yaws, and anti-windup limits. We compared A* and Dijkstra paths, modeled LiDAR obstacle avoidance in ROS GazeboSim, and tested the controller using TurtleBot Vicon tracking.</p><p class="research-finding">Controller performance evaluated with matched-pairs tests at <i>p</i> &lt; 0.01.</p><div class="work-links"><a href="https://ieeexplore.ieee.org/document/11533106" target="_blank" rel="noopener noreferrer">Read the paper ↗</a><a href="https://drive.google.com/file/d/18ED5a_aI4rQM_JSxM_MhHVoMt1Xh2ltn/view" target="_blank" rel="noopener noreferrer">Extended paper ↗</a><a href="https://youtu.be/6KWDjNa425o" target="_blank" rel="noopener noreferrer">Symposium video ↗</a></div></div></div></section>
+<section class="community-section" id="civic-service" aria-labelledby="community-title"><div class="section-heading"><h2 id="community-title">Beyond the code</h2><span>Community robotics</span></div><article class="community-feature"><div><p class="work-context">Founder · Mentor · Drive Coach / 2022 — 2026</p><h3>Helping the next team<br>get started.</h3><p>I founded FTC Team 22348 REAPR to expand access to competitive robotics in Robbinsville. I secured <strong>$16,000+ in sponsorships</strong>, taught Java and computer vision, and returned as a mentor and drive coach.</p><p>The team qualified for the 2024 New Jersey State Championship. The work I'm proudest of is watching students become confident enough to teach the next group.</p><a class="text-link" href="/experience/ftc/">The REAPR story ↗</a></div><figure><img src="/media/FTC1.JPG" alt="FTC Team 22348 REAPR with its robot" loading="lazy"><figcaption>Team 22348 REAPR · Robbinsville, NJ</figcaption></figure></article></section>
+<section class="background-section" id="background" aria-labelledby="background-title"><div class="section-heading"><h2 id="background-title">Background &amp; recognition</h2><a href="/resume.pdf">Full resume ↗</a></div><div class="background-columns"><div><h3 class="small-heading">Education</h3><article class="education-entry"><p class="work-context">Expected May 2030</p><h4>Princeton University | Princeton, NJ</h4><p class="education-degree">B.S.E. Computer Science</p><p class="education-minors">Prospective minors: Mathematics, Robotics</p><div class="princeton-activities"><h5>At Princeton</h5><ul><li>PAVE (Autonomous Vehicle Engineering)</li><li>Princeton Robotics Club</li><li>South Asian Students Association (SASA)</li></ul></div></article><article class="education-entry"><p class="work-context">September 2022 - June 2026</p><h4>Robbinsville High School | Robbinsville, NJ</h4><p class="education-degree">High School Diploma</p><p>Weighted GPA <strong>4.682/5.0</strong> | Unweighted GPA <strong>3.977/4.0</strong> | SAT <strong>1530</strong> | Won a <strong>$2,500 National Merit Scholarship</strong> (<strong>&lt;1% acceptance rate</strong>) | AP Scholar with Distinction | NJ State Seal of Biliteracy, Spanish.</p></article><div class="skills-note"><h3 class="small-heading">Working toolkit</h3><p>Java, Python, MATLAB, OpenCV, TensorFlow, ROS, GazeboSim, Git, and Vicon.</p></div></div><div><h3 class="small-heading">Recognition</h3><article class="recognition-item"><span class="award-year">2026</span><div><h4>HackHarvard Undergraduate Hackathon | Nemo</h4><ul class="award-placements"><li><strong class="award-rank">3rd</strong><div class="award-description"><span>Overall Best Project</span></div></li><li><strong class="award-rank">2nd</strong><div class="award-description"><span>ASUS Save the Earth</span><small>Sustainability Track</small></div></li></ul></div></article><article class="recognition-item"><span class="award-year">2024</span><div><h4>2024 AIME Qualifier</h4><ul class="award-placements"><li><strong class="award-rank">Top 2.5%</strong><div class="award-description"><span>AMC scorers</span><small>Qualified for AIME · 2024</small></div></li></ul><p>Qualified for the American Invitational Mathematics Examination through <strong>strong performance</strong> on the AMC competition series.</p></div></article><article class="recognition-item"><span class="award-year">2024</span><div><h4>FIRST World Championship Division Winner</h4><ul class="award-placements"><li><strong class="award-rank">1st</strong><div class="award-description"><span>Curie Division</span><small>FIRST World Championship · 2024</small></div></li><li><strong class="award-rank">Top ~0.1%</strong><div class="award-description"><span>Worldwide performance</span><small>FIRST Robotics Competition</small></div></li></ul><p>Won the Curie Division at the 2024 FIRST World Championship with Kronos after a season of autonomous, vision, and match-strategy work.</p></div></article><article class="recognition-item"><span class="award-year">2026</span><div><h4>Innovation in Control Award</h4><ul class="award-placements"><li><strong class="award-rank">Winner</strong><div class="award-description"><span>Innovation in Control</span><small>FMA Robbinsville · 2026</small></div></li></ul><p>Won the FIRST Innovation in Control Award at the 2026 FMA Robbinsville District Event for an Oculus Quest navigation system, a cloud debugging chatbot, and scouting analytics that linked robot performance to match strategy.</p></div></article><article class="recognition-item"><span class="award-year">2026</span><div><h4>National Merit Scholarship Winner</h4><ul class="award-placements"><li><strong class="award-rank">Top 1%</strong><div class="award-description"><span>PSAT/NMSQT scorers</span><small>$2,500 National Merit Scholarship · 2026</small></div></li></ul><p>Named a National Merit Scholarship winner for academic achievement and <strong>PSAT/NMSQT performance</strong>.</p></div></article></div></div></section>
+<section class="contact-section" id="contact"><p class="small-heading">Let's talk</p><h2>Something worth building?</h2><a class="contact-email" href="mailto:am6927@princeton.edu">am6927@princeton.edu ↗</a><div class="work-links"><a href="https://github.com/aarushmane">GitHub ↗</a><a href="https://www.linkedin.com/in/aarush-mane/">LinkedIn ↗</a><a href="https://ieeexplore.ieee.org/author/120619555333829">IEEE Xplore ↗</a></div></section>
 </div>
 </main>
     <footer class="site-footer"><span>© 2026 Aarush Mane</span><span>Computer Science · Princeton University</span></footer>
-    <script src="/js/home.js" defer></script>
-    <script src="/js/pixel-interface.js" defer></script>
+    <script src="/js/portfolio.js" defer></script>
 </body>
 </html>

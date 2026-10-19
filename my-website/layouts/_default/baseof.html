@@ -8,18 +8,16 @@
     {{ $styles := resources.Get "css/main.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 
-    <!-- TECH_BREADBOARD_THEME -->
-    {{ $techStyles := resources.Get "css/tech-breadboard.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $techStyles.RelPermalink }}">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-nav">
-        <a class="brand" href="{{ .Site.Home.RelPermalink }}">Aarush Mane</a>
+        <a class="brand" href="{{ .Site.Home.RelPermalink }}"><span class="brand-mark" aria-hidden="true">a<span>m</span></span><span class="brand-name">Aarush Mane</span></a>
         <nav aria-label="Main navigation">
             <a href="{{ .Site.Home.RelPermalink }}#about">About</a>
             <a href="{{ .Site.Home.RelPermalink }}#projects">Projects</a>
             <a href="{{ .Site.Home.RelPermalink }}#research">Research</a>
-            <a href="{{ .Site.Home.RelPermalink }}#civic-service">Civic Service</a>
+            <a href="{{ .Site.Home.RelPermalink }}#civic-service">Community</a>
         </nav>
         <div class="nav-actions">
             <a class="nav-icon" href="{{ .Site.Params.github_url }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
@@ -36,9 +34,9 @@
             </a>
         </div>
     </header>
-    <main>{{ block "main" . }}{{ end }}</main>
+    <div class="reading-progress" aria-hidden="true"></div>
+    <main id="main">{{ block "main" . }}{{ end }}</main>
     <footer class="site-footer"><span>© {{ now.Year }} Aarush Mane</span><span>Computer Science · Princeton University</span></footer>
-    <script src="{{ .Site.Home.RelPermalink }}js/home.js" defer></script>
-    <script src="{{ .Site.Home.RelPermalink }}js/pixel-interface.js" defer></script>
+    <script src="{{ .Site.Home.RelPermalink }}js/portfolio.js" defer></script>
 </body>
 </html>

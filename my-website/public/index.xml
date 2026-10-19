@@ -14,7 +14,7 @@
 		
 			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>HackHarvard | Nemo</title>
+				<title>HackHarvard Undergraduate Hackathon | Nemo</title>
 				<link>http://localhost:1313/awards/hackharvard-nemo/</link>
 				<pubDate>Sun, 18 Oct 2026 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/awards/hackharvard-nemo/</guid>
@@ -25,7 +25,7 @@
 				<link>http://localhost:1313/projects/nemo-pollution-source-investigation/</link>
 				<pubDate>Sun, 18 Oct 2026 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/projects/nemo-pollution-source-investigation/</guid>
-				<description>&lt;strong&gt;3rd Overall Best Project&lt;/strong&gt; and &lt;strong&gt;2nd, ASUS Save the Earth Sustainability Track&lt;/strong&gt; at HackHarvard. I conceived the Grok-assisted physics workflow, built validation and integrity checks, and pitched to judges and sponsors.</description>
+				<description>&lt;strong&gt;3rd Overall Best Project&lt;/strong&gt; and &lt;strong&gt;2nd, ASUS Save the Earth Sustainability Track&lt;/strong&gt; at HackHarvard Undergraduate Hackathon. I conceived the Grok-assisted physics workflow, built validation and integrity checks, and pitched to judges and sponsors.</description>
 			</item>
 			<item>
 				<title>Argus Panoptes Chatbot</title>
@@ -74,7 +74,7 @@
 				<link>http://localhost:1313/education/princeton/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/education/princeton/</guid>
-				<description>Computer Science undergraduate. Dual-enrollment coursework includes Single Variable Analysis (MAT215) and Linear Algebra with Intro to Proofs (MAT217).</description>
+				<description></description>
 			</item>
 			<item>
 				<title>FIRST Tech Challenge | REAPR</title>
@@ -88,7 +88,7 @@
 				<link>http://localhost:1313/awards/championship-division/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/awards/championship-division/</guid>
-				<description>Won the team&amp;rsquo;s division at the 2024 FIRST World Championship with Kronos after a season of autonomous, vision, and match-strategy work.</description>
+				<description>Won the Curie Division at the 2024 FIRST World Championship with Kronos after a season of autonomous, vision, and match-strategy work.</description>
 			</item>
 			<item>
 				<title>FRC | Software Development &amp; Strategy Lead</title>
@@ -131,13 +131,6 @@
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/research/ieee-pid-control/</guid>
 				<description>Co-authored research on non-linear PID control, path planning, ROS GazeboSim obstacle avoidance, and Vicon-validated tracking.</description>
-			</item>
-			<item>
-				<title>Purple Comet Math Meet | Team Winner</title>
-				<link>http://localhost:1313/awards/purple-comet/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/awards/purple-comet/</guid>
-				<description>Won the Purple Comet Math Meet team contest in 2024 and 2025 by solving timed problems in algebra, geometry, number theory, and combinatorics.</description>
 			</item>
 	</channel>
 </rss>
