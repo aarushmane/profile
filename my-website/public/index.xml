@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Aarush Mane</title>
-		<link>https://aarushmane.github.io/profile/</link>
+		<link>http://localhost:1313/</link>
 		<description>Recent content on Aarush Mane</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,126 +10,133 @@
 		
 		
 		
-			<lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Sun, 18 Oct 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://aarushmane.github.io/profile/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>HackHarvard | Nemo</title>
+				<link>http://localhost:1313/awards/hackharvard-nemo/</link>
+				<pubDate>Sun, 18 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/awards/hackharvard-nemo/</guid>
+				<description>&lt;strong&gt;3rd Overall Best Project&lt;/strong&gt; and &lt;strong&gt;2nd, ASUS Save the Earth Sustainability Track&lt;/strong&gt; for Nemo. Conceived the Grok-assisted physics workflow, built validation checks, and pitched to judges and sponsors.</description>
+			</item>
+			<item>
+				<title>Nemo | Pollution Source Investigation</title>
+				<link>http://localhost:1313/projects/nemo-pollution-source-investigation/</link>
+				<pubDate>Sun, 18 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/projects/nemo-pollution-source-investigation/</guid>
+				<description>&lt;strong&gt;3rd Overall Best Project&lt;/strong&gt; and &lt;strong&gt;2nd, ASUS Save the Earth Sustainability Track&lt;/strong&gt; at HackHarvard. I conceived the Grok-assisted physics workflow, built validation and integrity checks, and pitched to judges and sponsors.</description>
+			</item>
 			<item>
 				<title>Argus Panoptes Chatbot</title>
-				<link>https://aarushmane.github.io/profile/projects/argus-panoptes-chatbot/</link>
+				<link>http://localhost:1313/projects/argus-panoptes-chatbot/</link>
 				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/projects/argus-panoptes-chatbot/</guid>
+				<guid>http://localhost:1313/projects/argus-panoptes-chatbot/</guid>
 				<description>An autonomous Slack agent that turns robotics APIs, scouting data, and match logs into searchable analysis and useful graphics.</description>
 			</item>
 			<item>
 				<title>Medusa | 2026 FRC Robot</title>
-				<link>https://aarushmane.github.io/profile/projects/medusa-2026-frc-robot/</link>
+				<link>http://localhost:1313/projects/medusa-2026-frc-robot/</link>
 				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/projects/medusa-2026-frc-robot/</guid>
+				<guid>http://localhost:1313/projects/medusa-2026-frc-robot/</guid>
 				<description>Oculus Quest coprocessor localization, 3D pose tracking, autonomous scheduling, and analytics for Team 2590&amp;rsquo;s Medusa robot, which earned the &lt;strong&gt;2026 Innovation in Control Award&lt;/strong&gt;.</description>
 			</item>
 			<item>
 				<title>iStart Valley | BioPack Startup Pitch</title>
-				<link>https://aarushmane.github.io/profile/projects/istart-valley-biopack-startup-pitch/</link>
+				<link>http://localhost:1313/projects/istart-valley-biopack-startup-pitch/</link>
 				<pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/projects/istart-valley-biopack-startup-pitch/</guid>
+				<guid>http://localhost:1313/projects/istart-valley-biopack-startup-pitch/</guid>
 				<description>A BioPack concept, market analysis, and venture pitch that earned Global Semifinalist placement. It was a proposal, not a launched company.</description>
 			</item>
 			<item>
 				<title>Leonidas | 2025 FRC Robot</title>
-				<link>https://aarushmane.github.io/profile/projects/leonidas-2025-frc-robot/</link>
+				<link>http://localhost:1313/projects/leonidas-2025-frc-robot/</link>
 				<pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/projects/leonidas-2025-frc-robot/</guid>
+				<guid>http://localhost:1313/projects/leonidas-2025-frc-robot/</guid>
 				<description>Vision, swerve autonomy, trajectory following, and simulation work for Team 2590&amp;rsquo;s Leonidas robot, which won &lt;strong&gt;2025 FMA Robbinsville robot performance&lt;/strong&gt;.</description>
 			</item>
 			<item>
 				<title>Kronos | 2024 FRC Robot</title>
-				<link>https://aarushmane.github.io/profile/projects/kronos-2024-frc-robot/</link>
+				<link>http://localhost:1313/projects/kronos-2024-frc-robot/</link>
 				<pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/projects/kronos-2024-frc-robot/</guid>
+				<guid>http://localhost:1313/projects/kronos-2024-frc-robot/</guid>
 				<description>Java command-based software, PathPlanner routines, and vision tools for Team 2590&amp;rsquo;s Kronos robot, which won its &lt;strong&gt;Championship Division&lt;/strong&gt; at Worlds.</description>
 			</item>
 			<item>
-				<title>AI Assistive Camera with Email Sender</title>
-				<link>https://aarushmane.github.io/profile/projects/ai-assistive-camera-with-email-sender/</link>
-				<pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/projects/ai-assistive-camera-with-email-sender/</guid>
-				<description>A Python and Streamlit assistive-camera workflow used successfully by &lt;strong&gt;200+ users&lt;/strong&gt; at the 2024 event.</description>
-			</item>
-			<item>
 				<title>2024 AIME Qualifier</title>
-				<link>https://aarushmane.github.io/profile/awards/aime-qualifier/</link>
+				<link>http://localhost:1313/awards/aime-qualifier/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/awards/aime-qualifier/</guid>
+				<guid>http://localhost:1313/awards/aime-qualifier/</guid>
 				<description>Qualified for the American Invitational Mathematics Examination through &lt;strong&gt;strong performance&lt;/strong&gt; on the AMC competition series.</description>
 			</item>
 			<item>
 				<title>B.S.E. Computer Science</title>
-				<link>https://aarushmane.github.io/profile/education/princeton/</link>
+				<link>http://localhost:1313/education/princeton/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/education/princeton/</guid>
+				<guid>http://localhost:1313/education/princeton/</guid>
 				<description>Computer Science undergraduate. Dual-enrollment coursework includes Single Variable Analysis (MAT215) and Linear Algebra with Intro to Proofs (MAT217).</description>
 			</item>
 			<item>
 				<title>FIRST Tech Challenge | REAPR</title>
-				<link>https://aarushmane.github.io/profile/experience/ftc/</link>
+				<link>http://localhost:1313/experience/ftc/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/experience/ftc/</guid>
+				<guid>http://localhost:1313/experience/ftc/</guid>
 				<description>I founded REAPR to expand access to competitive robotics in my community, then grew from team founder to mentor and drive coach as the program developed.</description>
 			</item>
 			<item>
 				<title>FIRST World Championship Division Winner</title>
-				<link>https://aarushmane.github.io/profile/awards/championship-division/</link>
+				<link>http://localhost:1313/awards/championship-division/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/awards/championship-division/</guid>
+				<guid>http://localhost:1313/awards/championship-division/</guid>
 				<description>Won the team&amp;rsquo;s division at the 2024 FIRST World Championship with Kronos after a season of autonomous, vision, and match-strategy work.</description>
 			</item>
 			<item>
 				<title>FRC | Software Development &amp; Strategy Lead</title>
-				<link>https://aarushmane.github.io/profile/experience/frc/</link>
+				<link>http://localhost:1313/experience/frc/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/experience/frc/</guid>
+				<guid>http://localhost:1313/experience/frc/</guid>
 				<description>I lead software development and technical strategy for a &lt;strong&gt;65-member&lt;/strong&gt; robotics program.</description>
 			</item>
 			<item>
 				<title>GSET | Undergraduate Research Scholar</title>
-				<link>https://aarushmane.github.io/profile/experience/gset/</link>
+				<link>http://localhost:1313/experience/gset/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/experience/gset/</guid>
+				<guid>http://localhost:1313/experience/gset/</guid>
 				<description>Selected as &lt;strong&gt;1 of 64&lt;/strong&gt; statewide applicants. Worked on autonomous path tracking with a &lt;strong&gt;five-person&lt;/strong&gt; research team.</description>
 			</item>
 			<item>
 				<title>High School Diploma</title>
-				<link>https://aarushmane.github.io/profile/education/robbinsville/</link>
+				<link>http://localhost:1313/education/robbinsville/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/education/robbinsville/</guid>
+				<guid>http://localhost:1313/education/robbinsville/</guid>
 				<description>Weighted GPA &lt;strong&gt;4.682/5.0&lt;/strong&gt; | Unweighted GPA &lt;strong&gt;3.977/4.0&lt;/strong&gt; | SAT &lt;strong&gt;1530&lt;/strong&gt; | Won a &lt;strong&gt;$2,500 National Merit Scholarship&lt;/strong&gt; (&lt;strong&gt;&amp;lt;1% acceptance rate&lt;/strong&gt;) | AP Scholar with Distinction | NJ State Seal of Biliteracy, Spanish.</description>
 			</item>
 			<item>
 				<title>Innovation in Control Award</title>
-				<link>https://aarushmane.github.io/profile/awards/innovation-control/</link>
+				<link>http://localhost:1313/awards/innovation-control/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/awards/innovation-control/</guid>
+				<guid>http://localhost:1313/awards/innovation-control/</guid>
 				<description>Won the FIRST Innovation in Control Award at the 2026 FMA Robbinsville District Event for an Oculus Quest navigation system, a cloud debugging chatbot, and scouting analytics that linked robot performance to match strategy.</description>
 			</item>
 			<item>
 				<title>National Merit Scholarship Winner</title>
-				<link>https://aarushmane.github.io/profile/awards/national-merit/</link>
+				<link>http://localhost:1313/awards/national-merit/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/awards/national-merit/</guid>
+				<guid>http://localhost:1313/awards/national-merit/</guid>
 				<description>Named a National Merit Scholarship winner for academic achievement and &lt;strong&gt;PSAT/NMSQT performance&lt;/strong&gt;.</description>
 			</item>
 			<item>
 				<title>PID Control Optimization and Trajectory Tracking for Autonomous Differential Drive Robots</title>
-				<link>https://aarushmane.github.io/profile/research/ieee-pid-control/</link>
+				<link>http://localhost:1313/research/ieee-pid-control/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/research/ieee-pid-control/</guid>
+				<guid>http://localhost:1313/research/ieee-pid-control/</guid>
 				<description>Co-authored research on non-linear PID control, path planning, ROS GazeboSim obstacle avoidance, and Vicon-validated tracking.</description>
 			</item>
 			<item>
 				<title>Purple Comet Math Meet | Team Winner</title>
-				<link>https://aarushmane.github.io/profile/awards/purple-comet/</link>
+				<link>http://localhost:1313/awards/purple-comet/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/awards/purple-comet/</guid>
+				<guid>http://localhost:1313/awards/purple-comet/</guid>
 				<description>Won the Purple Comet Math Meet team contest in 2024 and 2025 by solving timed problems in algebra, geometry, number theory, and combinatorics.</description>
 			</item>
 	</channel>

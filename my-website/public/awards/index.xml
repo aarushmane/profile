@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Awards on Aarush Mane</title>
-		<link>https://aarushmane.github.io/profile/awards/</link>
+		<link>http://localhost:1313/awards/</link>
 		<description>Recent content in Awards on Aarush Mane</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,40 +10,49 @@
 		
 		
 		
-			<atom:link href="https://aarushmane.github.io/profile/awards/index.xml" rel="self" type="application/rss+xml" />
+			<lastBuildDate>Sun, 18 Oct 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/awards/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>HackHarvard | Nemo</title>
+				<link>http://localhost:1313/awards/hackharvard-nemo/</link>
+				<pubDate>Sun, 18 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/awards/hackharvard-nemo/</guid>
+				<description>&lt;strong&gt;3rd Overall Best Project&lt;/strong&gt; and &lt;strong&gt;2nd, ASUS Save the Earth Sustainability Track&lt;/strong&gt; for Nemo. Conceived the Grok-assisted physics workflow, built validation checks, and pitched to judges and sponsors.</description>
+			</item>
 			<item>
 				<title>2024 AIME Qualifier</title>
-				<link>https://aarushmane.github.io/profile/awards/aime-qualifier/</link>
+				<link>http://localhost:1313/awards/aime-qualifier/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/awards/aime-qualifier/</guid>
+				<guid>http://localhost:1313/awards/aime-qualifier/</guid>
 				<description>Qualified for the American Invitational Mathematics Examination through &lt;strong&gt;strong performance&lt;/strong&gt; on the AMC competition series.</description>
 			</item>
 			<item>
 				<title>FIRST World Championship Division Winner</title>
-				<link>https://aarushmane.github.io/profile/awards/championship-division/</link>
+				<link>http://localhost:1313/awards/championship-division/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/awards/championship-division/</guid>
+				<guid>http://localhost:1313/awards/championship-division/</guid>
 				<description>Won the team&amp;rsquo;s division at the 2024 FIRST World Championship with Kronos after a season of autonomous, vision, and match-strategy work.</description>
 			</item>
 			<item>
 				<title>Innovation in Control Award</title>
-				<link>https://aarushmane.github.io/profile/awards/innovation-control/</link>
+				<link>http://localhost:1313/awards/innovation-control/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/awards/innovation-control/</guid>
+				<guid>http://localhost:1313/awards/innovation-control/</guid>
 				<description>Won the FIRST Innovation in Control Award at the 2026 FMA Robbinsville District Event for an Oculus Quest navigation system, a cloud debugging chatbot, and scouting analytics that linked robot performance to match strategy.</description>
 			</item>
 			<item>
 				<title>National Merit Scholarship Winner</title>
-				<link>https://aarushmane.github.io/profile/awards/national-merit/</link>
+				<link>http://localhost:1313/awards/national-merit/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/awards/national-merit/</guid>
+				<guid>http://localhost:1313/awards/national-merit/</guid>
 				<description>Named a National Merit Scholarship winner for academic achievement and &lt;strong&gt;PSAT/NMSQT performance&lt;/strong&gt;.</description>
 			</item>
 			<item>
 				<title>Purple Comet Math Meet | Team Winner</title>
-				<link>https://aarushmane.github.io/profile/awards/purple-comet/</link>
+				<link>http://localhost:1313/awards/purple-comet/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/awards/purple-comet/</guid>
+				<guid>http://localhost:1313/awards/purple-comet/</guid>
 				<description>Won the Purple Comet Math Meet team contest in 2024 and 2025 by solving timed problems in algebra, geometry, number theory, and combinatorics.</description>
 			</item>
 	</channel>

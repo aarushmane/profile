@@ -303,7 +303,24 @@
                 <article class="recognition-item">
                     <p class="card-meta">{{ .Params.year }}</p>
                     <h3>{{ .Title }}</h3>
+                    {{ with .Params.placements }}
+                    <ul class="award-placements" aria-label="Award placements">
+                        {{ range . }}
+                        <li>
+                            <strong class="award-rank">{{ .rank }}</strong>
+                            <div class="award-description">
+                                <span>{{ .label }}</span>
+                                {{ with .detail }}<small>{{ . }}</small>{{ end }}
+                            </div>
+                        </li>
+                        {{ end }}
+                    </ul>
+                    {{ else }}
                     <p>{{ .Params.summary | markdownify }}</p>
+                    {{ end }}
+                    {{ with .Params.project }}
+                    <a class="award-project-link" href="{{ relref $ . }}">Explore Nemo <span aria-hidden="true">→</span></a>
+                    {{ end }}
                 </article>
             {{ end }}
         </div>

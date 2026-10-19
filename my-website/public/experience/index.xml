@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Experiences on Aarush Mane</title>
-		<link>https://aarushmane.github.io/profile/experience/</link>
+		<link>http://localhost:1313/experience/</link>
 		<description>Recent content in Experiences on Aarush Mane</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,26 +10,26 @@
 		
 		
 		
-			<atom:link href="https://aarushmane.github.io/profile/experience/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/experience/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>FIRST Tech Challenge | REAPR</title>
-				<link>https://aarushmane.github.io/profile/experience/ftc/</link>
+				<link>http://localhost:1313/experience/ftc/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/experience/ftc/</guid>
+				<guid>http://localhost:1313/experience/ftc/</guid>
 				<description>I founded REAPR to expand access to competitive robotics in my community, then grew from team founder to mentor and drive coach as the program developed.</description>
 			</item>
 			<item>
 				<title>FRC | Software Development &amp; Strategy Lead</title>
-				<link>https://aarushmane.github.io/profile/experience/frc/</link>
+				<link>http://localhost:1313/experience/frc/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/experience/frc/</guid>
+				<guid>http://localhost:1313/experience/frc/</guid>
 				<description>I lead software development and technical strategy for a &lt;strong&gt;65-member&lt;/strong&gt; robotics program.</description>
 			</item>
 			<item>
 				<title>GSET | Undergraduate Research Scholar</title>
-				<link>https://aarushmane.github.io/profile/experience/gset/</link>
+				<link>http://localhost:1313/experience/gset/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://aarushmane.github.io/profile/experience/gset/</guid>
+				<guid>http://localhost:1313/experience/gset/</guid>
 				<description>Selected as &lt;strong&gt;1 of 64&lt;/strong&gt; statewide applicants. Worked on autonomous path tracking with a &lt;strong&gt;five-person&lt;/strong&gt; research team.</description>
 			</item>
 	</channel>
