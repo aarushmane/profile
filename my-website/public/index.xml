@@ -119,13 +119,6 @@
 				<description>Won the FIRST Innovation in Control Award at the 2026 FMA Robbinsville District Event for an Oculus Quest navigation system, a cloud debugging chatbot, and scouting analytics that linked robot performance to match strategy.</description>
 			</item>
 			<item>
-				<title>National Merit Scholarship Winner</title>
-				<link>http://localhost:1313/awards/national-merit/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/awards/national-merit/</guid>
-				<description>Named a National Merit Scholarship winner for academic achievement and &lt;strong&gt;PSAT/NMSQT performance&lt;/strong&gt;.</description>
-			</item>
-			<item>
 				<title>PID Control Optimization and Trajectory Tracking for Autonomous Differential Drive Robots</title>
 				<link>http://localhost:1313/research/ieee-pid-control/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
