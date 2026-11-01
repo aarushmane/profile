@@ -6,6 +6,22 @@ period: "HackHarvard Undergraduate Hackathon | October 16-18, 2026"
 summary: "**3rd Overall Best Project** and **2nd, ASUS Save the Earth Sustainability Track** at HackHarvard Undergraduate Hackathon. I conceived the Grok-assisted physics workflow, built validation and integrity checks, and pitched to judges and sponsors."
 date: 2026-10-18
 external: "https://nemo-software-demo.onrender.com/"
+media:
+  - src: "media/Nemo1.jpeg"
+    alt: "Nemo team holding the third-place grand prize award at HackHarvard"
+    caption: "Celebrating 3rd Overall Best Project at HackHarvard 2026."
+  - src: "media/Nemo2.jpeg"
+    alt: "Nemo landing page introducing pollution-source tracing and interception planning"
+    caption: "Nemo's landing page and entry point to the investigation workspace."
+  - src: "media/Nemo3.jpeg"
+    alt: "Nemo Data Lab comparing central and flanking interception layouts in a simulated ocean scenario"
+    caption: "Data Lab comparison of interception layouts in an illustrative ocean simulation."
+  - src: "media/Nemo4.jpeg"
+    alt: "Nemo team beside a laptop displaying the project at HackHarvard"
+    caption: "The Nemo team with the project at HackHarvard."
+  - src: "media/Nemo5.jpeg"
+    alt: "HackHarvard 2026 event screen inside the venue at Harvard University"
+    caption: "HackHarvard 2026 at Harvard University, October 16-18."
 ---
 
 Nemo earned **3rd Overall Best Project** and **2nd in the ASUS “Save the Earth” Sustainability Track** at HackHarvard Undergraduate Hackathon, October 16-18, 2026. Our team built a research prototype that connects webcam observations, pollution-source modeling, and ocean-current data to investigate possible debris pathways and compare interception layouts.

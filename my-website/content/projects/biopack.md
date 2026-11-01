@@ -5,6 +5,16 @@ group: "project"
 period: "iStart Valley | Jan 2025 - Jun 2025"
 summary: "A BioPack concept, market analysis, and venture pitch that earned Global Semifinalist placement. It was a proposal, not a launched company."
 date: 2025-06-01
+media:
+  - src: "media/BioPackSlide1.jpg"
+    alt: "BioPack pitch deck title slide for iStart Valley 2025"
+    caption: "Introducing the BioPack concept in our iStart Valley startup pitch."
+  - src: "media/BioPackSlide2.jpg"
+    alt: "BioPack origin slide showing an Evergreen Coffee drink and company logo"
+    caption: "An Evergreen Coffee drink illustrates the everyday packaging that inspired BioPack."
+  - src: "media/BioPackSlide3.jpg"
+    alt: "BioPack pitch slide outlining the environmental impact of plastic waste"
+    caption: "Outlining plastic waste, persistent packaging, and microplastics as problems to address."
 document:
   src: "media/BioPackPitch.pdf"
   label: "BioPack pitch deck"
