@@ -4,13 +4,13 @@
     <div class="work-gallery-slides">
         {{ $ordered := (where . "type" "video") | append (where . "type" "ne" "video") }}
         {{ range $index, $media := $ordered }}
-        <figure class="work-gallery-slide" {{ if $index }}hidden{{ end }} aria-label="{{ add $index 1 }} of {{ len $.Params.media }}" aria-roledescription="slide">
+        <figure class="work-gallery-slide{{ if eq .fit "contain" }} fit-contain{{ end }}" {{ if $index }}hidden{{ end }} aria-label="{{ add $index 1 }} of {{ len $.Params.media }}" aria-roledescription="slide">
             {{ if eq .type "video" }}
-            <video controls muted playsinline preload="none" aria-label="{{ .alt }}">
+            <div class="slide-frame"><video controls muted playsinline preload="none" aria-label="{{ .alt }}">
                 <source src="{{ $home }}{{ .src }}" type="video/mp4">
-            </video>
+            </video></div>
             {{ else }}
-            <a href="{{ $home }}{{ .src }}" target="_blank" rel="noopener noreferrer"><img src="{{ $home }}{{ .src }}" alt="{{ .alt }}" loading="lazy"></a>
+            <a class="slide-frame" href="{{ $home }}{{ .src }}" target="_blank" rel="noopener noreferrer"><img src="{{ $home }}{{ .src }}" alt="{{ .alt }}" loading="lazy"></a>
             {{ end }}
             <figcaption>{{ .caption | default .alt }}</figcaption>
         </figure>
@@ -18,9 +18,9 @@
     </div>
     {{ if gt (len .) 1 }}
     <div class="work-gallery-controls" hidden>
-        <button type="button" data-gallery-previous aria-label="Previous slide">←</button>
+        <button type="button" data-gallery-previous aria-label="Previous slide"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
         <span data-gallery-count aria-live="off">01 / {{ printf "%02d" (len .) }}</span>
-        <button type="button" data-gallery-next aria-label="Next slide">→</button>
+        <button type="button" data-gallery-next aria-label="Next slide"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
         <button type="button" data-gallery-pause aria-label="Pause automatic slides">Pause</button>
     </div>
     {{ end }}

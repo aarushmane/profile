@@ -1,34 +1,163 @@
 {{ define "main" }}
 {{ $home := .Site.Home.RelPermalink }}
-<div class="portfolio-shell">
-<section class="opening-title" aria-label="Introduction">
-    <div class="opening-stack"><h1 aria-label="Aarush Mane"><span class="opening-name" aria-hidden="true">Aarush Mane<span class="opening-period">.</span></span></h1>
-    <div class="tagline-origin"><h2 class="traveling-tagline" aria-label="I build software for things that move."><span class="traveling-text" aria-hidden="true">I build software for things that move.</span></h2></div></div>
-    <a class="opening-scroll" href="#about"><span>Scroll to explore</span><span class="opening-scroll-line" aria-hidden="true"></span><span aria-hidden="true">↓</span></a>
-</section>
-<section class="intro intro-sequence" id="about">
-    <div class="tagline-target intro-statement" aria-hidden="true"></div>
-    <div class="intro-reveal">
-        <div class="intro-copy"><p class="intro-context"><span class="context-mark" aria-hidden="true">⌁</span> Computer Science · Princeton University</p><p class="intro-description">I'm a freshman studying Computer Science (B.S.E.) at Princeton. My work spans computer vision, autonomous robotics, and the experiments that tell us whether a system actually works.</p><div class="intro-links"><a href="#projects">Selected work ↓</a><a href="{{ $home }}resume.pdf" target="_blank" rel="noopener noreferrer">Resume ↗</a><a href="mailto:{{ .Site.Params.email }}">Get in touch ↗</a></div></div>
-        <figure class="about-portrait"><img src="{{ $home }}media/TitleProfile-optimized.jpg" alt="Aarush Mane standing beside a stone column" loading="lazy"><figcaption>Aarush Mane · Princeton University</figcaption></figure>
+{{ $arrow := `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>` | safeHTML }}
+
+<section class="hero" aria-label="Introduction">
+    <canvas class="hero-field" aria-hidden="true"></canvas>
+    <div class="hero-in">
+        <a class="pill" href="{{ $home }}resume.pdf" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3"/></svg><span class="pill-t">View my resume (PDF)</span><span aria-hidden="true">→</span></a>
+        <h1 class="hero-title" aria-label="Aarush Mane"><span data-chars aria-hidden="true">Aarush Mane</span></h1>
+        <p class="hero-sub" data-words>I build software for things that move.</p>
+        <p class="hero-meta"><span>Princeton CS ’30</span><span>Computer vision</span><span>Autonomy</span><span>Controls</span></p>
     </div>
-    <div class="controls-feature">
-        <div class="controls-intro"><p class="small-heading">A small look at how I think</p><h3>Plan. Observe.<br> Adjust.</h3><p>A robot needs more than a route. It needs to notice when the world pushes it off course and steer back.</p><p>That feedback loop connects my work in computer vision, motion control, and robotics.</p><a class="text-link" href="{{ $home }}research/ieee-pid-control/">Explore my controls research ↗</a></div>
+    <a class="hero-down" href="#about" aria-label="Scroll to introduction"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+</section>
+
+<div class="page">
+<section class="sec sec-intro" id="about" aria-label="About">
+    <p class="lede reveal">I’m a freshman studying Computer Science (B.S.E.) at Princeton. My work spans <em>computer vision</em>, <em>autonomous robotics</em>, and the experiments that tell us whether a system actually works.</p>
+
+    <div class="intro-panel reveal">
+        <div class="intro-stat">
+            <p class="stat-num">CS ’30</p>
+            <p class="stat-text">B.S.E. Computer Science at Princeton, with prospective minors in Mathematics and Robotics. Building with PAVE and the Princeton Robotics Club.</p>
+            <a class="text-link" href="#background">Education &amp; recognition →</a>
+        </div>
+        <figure class="intro-photo">
+            <img src="{{ $home }}media/TitleProfile-optimized.jpg" alt="Aarush Mane standing beside a stone column">
+            <figcaption>Princeton, NJ</figcaption>
+        </figure>
+    </div>
+
+    <div class="controls-feature reveal">
+        <div class="controls-intro">
+            <span class="eyebrow">How I think</span>
+            <h2>Plan. Observe.<br>Adjust.</h2>
+            <p>A robot needs more than a route. It needs to notice when the world pushes it off course and steer back.</p>
+            <p>That feedback loop connects my work in computer vision, motion control, and robotics.</p>
+            <a class="text-link" href="{{ $home }}research/ieee-pid-control/">Explore my controls research →</a>
+        </div>
         {{ partial "trajectory.html" . }}
     </div>
 </section>
 
-<section class="work-section" id="projects" aria-labelledby="work-title">
-<div class="section-heading"><h2 id="work-title">Selected work</h2><span>2024 — 2026</span></div>
-{{ range $index, $project := where .Site.RegularPages "Params.group" "project" }}
-<article class="work-entry"><span class="work-index">{{ printf "%02d" (add $index 1) }}</span><div class="work-body"><p class="work-context">{{ .Params.season | default .Params.period }}</p><h3><a href="{{ .RelPermalink }}">{{ .Title }} <span class="work-arrow" aria-hidden="true">↗</span></a></h3>
-{{ if eq .File.ContentBaseName "nemo" }}<p>I conceived the Grok-assisted physics workflow, wrote simulation instructions, and built experiment-validation and SHA-256 integrity checks. I also pitched the project to judges and sponsors.</p><ul class="work-honors" aria-label="HackHarvard Undergraduate Hackathon awards"><li><strong>3rd overall</strong> · HackHarvard Undergraduate Hackathon</li><li><strong>2nd</strong> · ASUS Save the Earth Sustainability Track</li></ul>{{ else }}<p>{{ .Params.summary | markdownify }}</p>{{ end }}
-<div class="work-links"><a href="{{ .RelPermalink }}">Read case study ↗</a>{{ with .Params.external }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ if eq $project.File.ContentBaseName "nemo" }}Live demo{{ else }}Project link{{ end }} ↗</a>{{ end }}</div></div>{{ partial "work-gallery.html" . }}</article>
-{{ end }}
+<section class="sec" id="projects" aria-labelledby="work-title">
+    {{ partial "divider.html" . }}
+    <div class="sec-head reveal">
+        <div><span class="eyebrow">Selected work · 2024 — 2026</span><h2 id="work-title">Things I’ve built</h2></div>
+        <a class="btn btn-solid" href="{{ .Site.Params.github_url }}" target="_blank" rel="noopener noreferrer">{{ $arrow }} GitHub</a>
+    </div>
+    <div class="work-grid">
+    {{ $projects := where .Site.RegularPages "Params.group" "project" }}
+    {{ $lastIndex := sub (len $projects) 1 }}
+    {{ range $index, $project := $projects }}
+        {{ $featured := or (eq $index 0) (and (eq (mod $lastIndex 2) 1) (eq $index $lastIndex)) }}
+        <article class="work-card reveal{{ if $featured }} is-featured{{ end }}{{ if and $featured (gt $index 0) }} is-flipped{{ end }}">
+            <div class="work-art">{{ partial "work-gallery.html" . }}</div>
+            <div class="work-body">
+                <p class="work-meta"><span class="work-index">{{ printf "%02d" (add $index 1) }}</span><span>{{ .Params.season | default .Params.period }}</span></p>
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                {{ if eq .File.ContentBaseName "nemo" }}
+                <p>I conceived the Grok-assisted physics workflow, wrote simulation instructions, and built experiment-validation and SHA-256 integrity checks. I also pitched the project to judges and sponsors.</p>
+                <ul class="work-honors" aria-label="HackHarvard Undergraduate Hackathon awards"><li><strong>3rd</strong> Overall · HackHarvard</li><li><strong>2nd</strong> ASUS Save the Earth Track</li></ul>
+                {{ else }}<p>{{ .Params.summary | markdownify }}</p>{{ end }}
+                <div class="work-links"><a class="btn btn-chip" href="{{ .RelPermalink }}">Case study →</a>{{ with .Params.external }}<a class="btn btn-ghost" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ if eq $project.File.ContentBaseName "nemo" }}Live demo{{ else }}Source code{{ end }} {{ $arrow }}</a>{{ end }}</div>
+            </div>
+        </article>
+    {{ end }}
+    </div>
 </section>
-<section class="research-section" id="research" aria-labelledby="research-title"><div class="section-heading"><h2 id="research-title">Research</h2><span>Published in IEEE Xplore</span></div><div class="research-feature research-with-gallery"><p class="research-margin">IEEE MIT URTC<br>October 2025<br><br>Co-author</p><div><h3><a href="{{ $home }}research/ieee-pid-control/">PID control optimization &amp; trajectory tracking for autonomous robots ↗</a></h3><p>I co-authored a nonlinear PID controller with moving integral windows, velocity-dependent target yaws, and anti-windup limits. We compared A* and Dijkstra paths, modeled LiDAR obstacle avoidance in ROS GazeboSim, and tested the controller using TurtleBot Vicon tracking.</p><p class="research-finding">Controller performance evaluated with matched-pairs tests at <i>p</i> &lt; 0.01.</p><div class="work-links"><a href="https://ieeexplore.ieee.org/document/11533106" target="_blank" rel="noopener noreferrer">Read the paper ↗</a><a href="https://drive.google.com/file/d/18ED5a_aI4rQM_JSxM_MhHVoMt1Xh2ltn/view" target="_blank" rel="noopener noreferrer">Extended paper ↗</a><a href="https://youtu.be/6KWDjNa425o" target="_blank" rel="noopener noreferrer">Symposium video ↗</a></div></div>{{ with .Site.GetPage "research/ieee-pid-control" }}{{ partial "work-gallery.html" . }}{{ end }}</div></section>
-<section class="community-section" id="civic-service" aria-labelledby="community-title"><div class="section-heading"><h2 id="community-title">Beyond the code</h2><span>Community robotics</span></div>{{ range where .Site.RegularPages "Params.group" "civic" }}<article class="community-feature"><div><p class="work-context">Founder · Mentor · Drive Coach / 2022 — 2026</p><h3>Helping the next team<br>get started.</h3><p>I founded FTC Team 22348 REAPR to expand access to competitive robotics in Robbinsville. I secured <strong>$16,000+ in sponsorships</strong>, taught Java and computer vision, and returned as a mentor and drive coach.</p><p>The team qualified for the 2024 New Jersey State Championship. The work I'm proudest of is watching students become confident enough to teach the next group.</p><a class="text-link" href="{{ .RelPermalink }}">The REAPR story ↗</a></div><figure><img src="{{ $home }}media/FTC1.JPG" alt="FTC Team 22348 REAPR with its robot" loading="lazy"><figcaption>Team 22348 REAPR · Robbinsville, NJ</figcaption></figure></article>{{ end }}</section>
-<section class="background-section" id="background" aria-labelledby="background-title"><div class="section-heading"><h2 id="background-title">Background &amp; recognition</h2><a href="{{ $home }}resume.pdf">Full resume ↗</a></div><div class="background-columns"><div><h3 class="small-heading">Education</h3>{{ range where .Site.RegularPages "Params.group" "education" }}<article class="education-entry"><p class="work-context">{{ .Params.period }}</p><h4>{{ .Params.institution }}</h4><p class="education-degree">{{ .Title }}</p>{{ with .Params.prospective_minors }}<p class="education-minors">Prospective minors: {{ . }}</p>{{ end }}{{ with .Params.summary }}<p>{{ . | markdownify }}</p>{{ end }}{{ with .Params.activities }}<div class="princeton-activities"><h5>At Princeton</h5><ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul></div>{{ end }}</article>{{ end }}<div class="skills-note"><h3 class="small-heading">Working toolkit</h3><p>Java, Python, MATLAB, OpenCV, TensorFlow, ROS, GazeboSim, Git, and Vicon.</p></div></div><div><h3 class="small-heading">Recognition</h3>{{ range where .Site.RegularPages "Params.group" "award" }}<article class="recognition-item"><span class="award-year">{{ .Params.year }}</span><div><h4>{{ .Title }}</h4>{{ with .Params.placements }}<ul class="award-placements">{{ range . }}<li><strong class="award-rank">{{ .rank }}</strong><div class="award-description"><span>{{ .label }}</span>{{ with .detail }}<small>{{ . }}</small>{{ end }}</div></li>{{ end }}</ul>{{ end }}{{ if or (not .Params.placements) .Params.show_description }}<p>{{ .Params.summary | markdownify }}</p>{{ end }}</div></article>{{ end }}</div></div></section>
-<section class="contact-section" id="contact"><p class="small-heading">Let's talk</p><h2>Something worth building?</h2><a class="contact-email" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }} ↗</a><div class="work-links"><a href="{{ .Site.Params.github_url }}">GitHub ↗</a><a href="{{ .Site.Params.linkedin_url }}">LinkedIn ↗</a><a href="{{ .Site.Params.ieee_url }}">IEEE Xplore ↗</a></div></section>
+
+<section class="sec" id="research" aria-labelledby="research-title">
+    {{ partial "divider.html" . }}
+    <div class="sec-head reveal">
+        <div><span class="eyebrow">Published in IEEE Xplore</span><h2 id="research-title">Research</h2></div>
+        <a class="btn btn-solid" href="https://ieeexplore.ieee.org/document/11533106" target="_blank" rel="noopener noreferrer">{{ $arrow }} Read the paper</a>
+    </div>
+    <div class="research-panel reveal">
+        <div class="research-art">{{ with .Site.GetPage "research/ieee-pid-control" }}{{ partial "work-gallery.html" . }}{{ end }}</div>
+        <div class="research-body">
+            <p class="tag-row"><span class="tag">IEEE MIT URTC</span><span class="tag">October 2025</span><span class="tag">Co-author</span></p>
+            <h3><a href="{{ $home }}research/ieee-pid-control/">PID control optimization &amp; trajectory tracking for autonomous robots</a></h3>
+            <p>I co-authored a nonlinear PID controller with moving integral windows, velocity-dependent target yaws, and anti-windup limits. We compared A* and Dijkstra paths, modeled LiDAR obstacle avoidance in ROS GazeboSim, and tested the controller using TurtleBot Vicon tracking.</p>
+            <dl class="research-venues">
+                <div><dt>Conference</dt><dd>IEEE MIT Undergraduate Research Technology Conference (URTC)</dd></div>
+                <div><dt>Summer program</dt><dd>New Jersey Governor’s School of Engineering &amp; Technology (GSET) · Rutgers</dd></div>
+            </dl>
+            <div class="work-links"><a class="btn btn-chip" href="{{ $home }}research/ieee-pid-control/">Case study →</a><a class="btn btn-ghost" href="https://drive.google.com/file/d/18ED5a_aI4rQM_JSxM_MhHVoMt1Xh2ltn/view" target="_blank" rel="noopener noreferrer">Extended paper {{ $arrow }}</a><a class="btn btn-ghost" href="https://youtu.be/6KWDjNa425o" target="_blank" rel="noopener noreferrer">Symposium video {{ $arrow }}</a></div>
+        </div>
+    </div>
+</section>
+
+<section class="sec" id="civic-service" aria-labelledby="community-title">
+    {{ partial "divider.html" . }}
+    <div class="sec-head reveal"><div><span class="eyebrow">Community robotics</span><h2 id="community-title">Beyond the code</h2></div></div>
+    {{ range where .Site.RegularPages "Params.group" "civic" }}
+    <article class="community-feature reveal">
+        <div class="community-copy">
+            <p class="work-meta"><span>Founder · Mentor · Drive Coach</span><span>2022 — 2026</span></p>
+            <h3>Helping the next team get started.</h3>
+            <p>I founded FTC Team 22348 REAPR to expand access to competitive robotics in Robbinsville. I secured <strong>$16,000+ in sponsorships</strong>, taught Java and computer vision, and returned as a mentor and drive coach.</p>
+            <p>The team qualified for the 2024 New Jersey State Championship. The work I’m proudest of is watching students become confident enough to teach the next group.</p>
+            <div class="mini-stats"><div><strong>$16K+</strong><span>in sponsorships and grants</span></div><div><strong>30%</strong><span>growth in high school robotics participation across Robbinsville</span></div></div>
+            <a class="btn btn-chip" href="{{ .RelPermalink }}">The REAPR story →</a>
+        </div>
+        <figure class="plain-figure"><img src="{{ $home }}media/FTC1.JPG" alt="FTC Team 22348 REAPR with its robot" loading="lazy"><figcaption>Team 22348 REAPR · Robbinsville, NJ</figcaption></figure>
+    </article>
+    {{ end }}
+</section>
+
+<section class="sec" id="background" aria-labelledby="background-title">
+    {{ partial "divider.html" . }}
+    <div class="sec-head reveal">
+        <div><span class="eyebrow">Background &amp; recognition</span><h2 id="background-title">Where I’ve been</h2></div>
+        <a class="btn btn-solid" href="{{ $home }}resume.pdf" target="_blank" rel="noopener noreferrer">{{ $arrow }} Full resume</a>
+    </div>
+
+    <p class="label reveal">Education</p>
+    <div class="edu-grid">
+    {{ range where .Site.RegularPages "Params.group" "education" }}
+        <article class="edu-card reveal">
+            <p class="work-meta"><span>{{ .Params.period }}</span></p>
+            <h3>{{ .Params.institution }}</h3>
+            <p class="edu-degree">{{ .Title }}</p>
+            {{ with .Params.prospective_minors }}<p class="edu-minors">Prospective minors: {{ . }}</p>{{ end }}
+            {{ with .Params.summary }}<p class="edu-summary">{{ . | markdownify }}</p>{{ end }}
+            {{ with .Params.activities }}<ul class="tag-row" aria-label="Activities at Princeton">{{ range . }}<li class="tag">{{ . }}</li>{{ end }}</ul>{{ end }}
+        </article>
+    {{ end }}
+    </div>
+
+    <p class="label reveal">Recognition</p>
+    <div class="feat-grid">
+    {{ range where .Site.RegularPages "Params.group" "award" }}
+        <article class="feat reveal">
+            <span class="feat-year">{{ .Params.year }}</span>
+            {{ with .Params.placements }}
+            <ul class="feat-places">{{ range . }}<li><strong>{{ .rank }}</strong><span>{{ .label }}</span>{{ with .detail }}<small>{{ . }}</small>{{ end }}</li>{{ end }}</ul>
+            {{ end }}
+            <h3>{{ .Title }}</h3>
+            {{ if or (not .Params.placements) .Params.show_description }}<p>{{ .Params.summary | markdownify }}</p>{{ end }}
+        </article>
+    {{ end }}
+    </div>
+
+    <p class="label reveal">Working toolkit</p>
+    <ul class="stack reveal" aria-label="Working toolkit">{{ range slice "Java" "Python" "MATLAB" "OpenCV" "TensorFlow" "ROS" "GazeboSim" "Git" "Vicon" }}<li>{{ . }}</li>{{ end }}</ul>
+</section>
+
+<section class="sec sec-close" id="contact">
+    <div class="close-card reveal">
+        <svg class="close-arcs" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <path class="arc arc-wide" pathLength="1" d="M-40 380C220 380 260 120 520 120S860 330 1240 60"/>
+            <path class="arc arc-thin" pathLength="1" d="M-40 330C240 350 300 170 540 160S900 300 1240 110"/>
+            <path class="arc arc-dash" d="M-40 380C220 380 260 120 520 120S860 330 1240 60"/>
+        </svg>
+        <span class="eyebrow">Let’s talk</span>
+        <h2>Something worth building?</h2>
+        <div class="close-actions"><a class="btn btn-solid btn-lg" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></div>
+        <div class="work-links"><a class="btn btn-ghost" href="{{ .Site.Params.github_url }}" target="_blank" rel="noopener noreferrer">GitHub {{ $arrow }}</a><a class="btn btn-ghost" href="{{ .Site.Params.linkedin_url }}" target="_blank" rel="noopener noreferrer">LinkedIn {{ $arrow }}</a><a class="btn btn-ghost" href="{{ .Site.Params.ieee_url }}" target="_blank" rel="noopener noreferrer">IEEE Xplore {{ $arrow }}</a></div>
+    </div>
+</section>
 </div>
 {{ end }}

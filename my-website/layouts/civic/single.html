@@ -14,12 +14,12 @@
 
         <div class="case-study-actions">
             {{ with .Params.first_url }}
-                <a class="button button-primary" href="{{ . }}" target="_blank" rel="noopener noreferrer">
+                <a class="btn btn-solid" href="{{ . }}" target="_blank" rel="noopener noreferrer">
                     FIRST team page ↗
                 </a>
             {{ end }}
 
-            <a class="button button-quiet" href="mailto:{{ .Site.Params.email }}">
+            <a class="btn btn-chip" href="mailto:{{ .Site.Params.email }}">
                 Discuss this work
             </a>
         </div>
@@ -43,7 +43,7 @@
     </div>
 
     <article class="case-study-content">
-        <div class="case-study-prose terminal-window"><div class="window-chrome" aria-hidden="true"><span class="window-dots"></span><span>case-study.md</span></div>
+        <div class="case-study-prose">
             {{ .Content }}
         </div>
 

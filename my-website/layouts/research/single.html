@@ -7,9 +7,9 @@
         <h1>{{ .Title }}</h1>
         <p class="case-study-summary">{{ .Params.summary | markdownify }}</p>
         <div class="case-study-actions">
-            <a class="button button-small" href="{{ .Params.paper_url }}" target="_blank" rel="noopener noreferrer">IEEE paper ↗</a>
-            <a class="button button-small" href="{{ .Params.extended_url }}" target="_blank" rel="noopener noreferrer">Extended Paper PDF ↗</a>
-            <a class="button button-small" href="{{ .Params.video_url }}" target="_blank" rel="noopener noreferrer">Symposium video ↗</a>
+            <a class="btn btn-solid" href="{{ .Params.paper_url }}" target="_blank" rel="noopener noreferrer">IEEE paper ↗</a>
+            <a class="btn btn-chip" href="{{ .Params.extended_url }}" target="_blank" rel="noopener noreferrer">Extended Paper PDF ↗</a>
+            <a class="btn btn-chip" href="{{ .Params.video_url }}" target="_blank" rel="noopener noreferrer">Symposium video ↗</a>
         </div>
     </header>
 
@@ -20,7 +20,7 @@
     </div>
 
     <article class="case-study-content">
-        <div class="case-study-prose terminal-window"><div class="window-chrome" aria-hidden="true"><span class="window-dots"></span><span>case-study.md</span></div>{{ .Content }}</div>
+        <div class="case-study-prose">{{ .Content }}</div>
         <aside class="case-study-aside">
             {{ with .Params.media }}
             <section class="case-study-gallery" aria-label="Research media"><p class="aside-gallery-label">Research media</p>

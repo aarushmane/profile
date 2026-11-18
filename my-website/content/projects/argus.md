@@ -8,6 +8,7 @@ date: 2026-06-01
 image: "/images/project-placeholder.svg"
 media:
   - src: "media/Argus1.jpg"
+    fit: "contain"
     alt: "Argus Panoptes chatbot interface in Slack"
     caption: "Argus delivers scouting and match insights inside the team’s existing Slack workflow."
   - src: "media/Argus2.jpg"

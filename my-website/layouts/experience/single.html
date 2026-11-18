@@ -15,7 +15,7 @@
         <div class="case-study-actions">
             {{ with .Params.first_url }}
                 <a
-                    class="button button-small"
+                    class="btn btn-chip"
                     href="{{ . }}"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -44,7 +44,7 @@
     </div>
 
     <article class="case-study-content">
-        <div class="case-study-prose terminal-window"><div class="window-chrome" aria-hidden="true"><span class="window-dots"></span><span>case-study.md</span></div>
+        <div class="case-study-prose">
             {{ .Content }}
         </div>
 
